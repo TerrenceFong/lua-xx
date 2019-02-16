@@ -11,6 +11,7 @@ local json = bb.getJSON()
 
 local DA_KA = '0'
 local TONG_JI = '1'
+local DING_SHI = '2'
 
 local HUD = createHUD()
 --			hideHUD(id)     --隐藏HUD
@@ -225,9 +226,7 @@ end
 
 local punch = function()
 	if wxPunchType == DA_KA then
-		device(function()
-			checkAppIsReady()
-		end)
+		device(checkAppIsReady)
 	elseif wxPunchType == TONG_JI then
 		local response_body = {}
 		local res, code, h = http.request {
@@ -252,6 +251,44 @@ local punch = function()
 		
 		uijson = json.encode(rootview)
 		showUI(uijson)
+	elseif wxPunchType == DING_SHI then
+		local rootview = RootView:create({style = ViewStyle.CUSTOME, width = 660, height = 600})
+
+		local label = Label:create("Label", {color = "0, 0, 225", size = 30})
+		label.text = "----------------设置时间----------------"
+		local editHour = Edit:create("editHour", {color = "0, 0, 0", size = 20, prompt = "默认小时 19"})
+		editHour.align = TextAlign.LEFT
+		local editMin = Edit:create("editMin", {color = "0, 0, 0", size = 20, prompt = "默认分钟 30"})
+		editMin.align = TextAlign.LEFT
+
+		rootview:addView(label)    --把page添加到rootview
+		rootview:addView(editHour)
+		rootview:addView(editMin)
+
+		local uijson = json.encode(rootview)
+		local UIRet, UIResults = showUI(uijson)
+
+		if UIRet == 0 then
+			toast("取消定时打卡")
+		elseif UIRet == 1 then
+			print_r(UIResults)
+			local hour = (UIResults.editHour ~= "" and {tonumber(UIResults.editHour)} or {19})[1]
+			local minute = (UIResults.editMin ~= "" and {tonumber(UIResults.editMin)} or {30})[1]
+			
+			local nowTime = os.time()
+			local dateTable = os.date("*t", nowTime)
+			dateTable.hour = hour
+			dateTable.min = minute
+			dateTable.sec = 0
+
+			local targetTime = os.time(dateTable)
+			
+			local countdown = targetTime - nowTime
+			print('倒计时：'..countdown)
+
+			setTimer(countdown * 1000, function() device(checkAppIsReady) end)
+			mSleep(countdown * 1000)
+		end
 	end
 end
 

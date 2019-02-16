@@ -44,6 +44,7 @@ CheckBoxGroup:setList	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\UI
 CheckBoxGroup:setSelects	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\UI.lua	135;"	f
 DA_KA	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	12;"	e
 DEFAULT	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\UI.lua	4;"	e
+DING_SHI	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	14;"	e
 DeepCopy	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\baiduOCR\HMAC-SHA256.lua	5;"	f
 Edit	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\UI.lua	96;"	e
 Edit:create	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\UI.lua	104;"	f
@@ -63,7 +64,7 @@ HMAC_SHA256_key	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\baiduOCR\HMAC-S
 HMAC_SHA256_key	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\baiduOCR\HMAC-SHA256.lua	210;"	e
 HMAC_SHA256_key	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\baiduOCR\HMAC-SHA256.lua	215;"	e
 HMAC_SHA256_write	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\baiduOCR\HMAC-SHA256.lua	245;"	f
-HUD	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	15;"	e
+HUD	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	16;"	e
 ITEMS	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\JSON.lua	878;"	e
 Image	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\UI.lua	37;"	e
 Image:create	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\UI.lua	42;"	f
@@ -500,8 +501,8 @@ chars	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	42
 chars	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	650;"	e
 chars	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	819;"	e
 check(ok)	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\tp.lua	49;"	f
-checkAppIsReady	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	197;"	e
-checkPunchStatus	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	105;"	e
+checkAppIsReady	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	198;"	e
+checkPunchStatus	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	106;"	e
 checkstep	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\ftp.lua	119;"	e
 choose	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\mime.lua	25;"	f
 choose(table)	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\socket.lua	58;"	f
@@ -544,6 +545,7 @@ connect4(address,	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket
 connect6(address,	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\socket.lua	23;"	f
 contains	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	466;"	f
 coroutine	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\smtp.lua	11;"	e
+countdown	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	286;"	e
 crc	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	923;"	e
 create	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\http.lua	294;"	e
 create(id,	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\UI.lua	104;"	f
@@ -587,6 +589,7 @@ data	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\baiduOCR\百度云OCR.lua	72;
 data(src,	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\smtp.lua	60;"	f
 data32	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\baiduOCR\MathBit.lua	63;"	e
 data64	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\baiduOCR\MathBit.lua	64;"	e
+dateTable	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	279;"	e
 decimal_part	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\JSON.lua	418;"	e
 decode	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\baiduOCR\百度云Base64编码.lua	124;"	e
 decode	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\baiduOCR\百度云Base64编码.lua	137;"	e
@@ -615,6 +618,8 @@ distanceBetween(t)	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\pos.l
 done	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\ltn12.lua	270;"	e
 done	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\socket.lua	137;"	e
 e	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\baiduOCR\百度云Base64编码.lua	105;"	e
+editHour	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	259;"	e
+editMin	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	261;"	e
 empty	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\ltn12.lua	77;"	f
 empty()	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\ltn12.lua	81;"	f
 encode(text)	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\baiduOCR\百度云Base64编码.lua	16;"	f
@@ -664,8 +669,8 @@ filter.cycle	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\ltn1
 filtered	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\ltn12.lua	269;"	e
 filtered	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\ltn12.lua	275;"	e
 find	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	586;"	f
-findPunch	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	138;"	e
-findWorkSpace	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	167;"	e
+findPunch	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	139;"	e
+findWorkSpace	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	168;"	e
 firstLetterUpper	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	497;"	f
 first_append	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	870;"	e
 fl	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\pos.lua	4;"	e
@@ -691,7 +696,7 @@ getCanonicalHeaders	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\baiduOCR\百
 getCanonicalQueryString	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\baiduOCR\百度云认证作者.lua	52;"	f
 getHeadersToSign	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\baiduOCR\百度云认证作者.lua	94;"	f
 getJSON()	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\badboy.lua	5;"	f
-getNow	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	28;"	e
+getNow	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	29;"	e
 getStrUtils()	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\badboy.lua	20;"	f
 get_reply	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\tp.lua	27;"	f
 getcontrol()	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\tp.lua	97;"	f
@@ -738,7 +743,7 @@ headers	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\smtp.lua	
 headers	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\smtp.lua	18;"	e
 headers	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\smtp.lua	191;"	e
 headers	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\smtp.lua	207;"	e
-headers	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	34;"	e
+headers	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	35;"	e
 headersToSign	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\baiduOCR\百度云认证作者.lua	143;"	e
 headersToSign	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\baiduOCR\百度云认证作者.lua	146;"	e
 headers_s	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\mbox.lua	23;"	e
@@ -758,6 +763,7 @@ highpart	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\JSON.lua	329;"	
 highpart	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\JSON.lua	353;"	e
 host	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\http.lua	212;"	e
 host	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\http.lua	242;"	e
+hour	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	275;"	e
 http	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\badboy.lua	72;"	e
 http	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\baiduOCR\百度云OCR.lua	46;"	e
 http	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\main.lua	42;"	e
@@ -807,8 +813,8 @@ index	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\pos.lua	30;"	e
 index	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\ltn12.lua	57;"	e
 index	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\ltn12.lua	62;"	e
 index	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\utils.lua	21;"	e
-info	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	239;"	e
-info	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	242;"	e
+info	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	238;"	e
+info	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	241;"	e
 integer_part	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\JSON.lua	406;"	e
 io	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\mime.lua	13;"	e
 ip	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\ftp.lua	74;"	e
@@ -850,7 +856,8 @@ keys(t)	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\baiduOCR\百度云认证作者
 l	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	931;"	e
 l	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	942;"	e
 lShiftOp(left,	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\baiduOCR\MathBit.lua	49;"	f
-label	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	248;"	e
+label	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	247;"	e
+label	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	257;"	e
 lang	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\text.lua	5;"	e
 last	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	312;"	e
 last	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\md5.lua	107;"	e
@@ -984,8 +991,8 @@ metat.__index:source	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\soc
 metat.__index:type	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\ftp.lua	166;"	f
 method	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\baiduOCR\百度云OCR.lua	50;"	e
 method	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\baiduOCR\百度云OCR.lua	64;"	e
-method	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	235;"	e
-method	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	33;"	e
+method	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	234;"	e
+method	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	34;"	e
 midA	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\JSON.lua	355;"	e
 midB	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\JSON.lua	357;"	e
 midpart	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\JSON.lua	326;"	e
@@ -993,6 +1000,7 @@ midpart	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\JSON.lua	330;"	e
 mime	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\http.lua	13;"	e
 mime	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\mime.lua	12;"	e
 mime	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\smtp.lua	19;"	e
+minute	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	276;"	e
 mode	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\http.lua	141;"	e
 mode	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\http.lua	166;"	e
 move	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\pos.lua	57;"	f
@@ -1039,6 +1047,7 @@ non_zero_message_bytes	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\S
 normalize	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\md5.lua	51;"	e
 normalize(marker)	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\mime.lua	81;"	f
 notOp(left)	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\baiduOCR\MathBit.lua	45;"	f
+nowTime	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	278;"	e
 nr	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\baiduOCR\MathBit.lua	100;"	e
 nr	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\baiduOCR\MathBit.lua	97;"	e
 nredirects	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\http.lua	293;"	e
@@ -1115,7 +1124,7 @@ p	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	853;"	
 p	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	855;"	e
 p	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	857;"	e
 padLen	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\md5.lua	356;"	e
-page	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	246;"	e
+page	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	245;"	e
 parameterStrings	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\baiduOCR\百度云认证作者.lua	58;"	e
 params	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\baiduOCR\百度云OCR.lua	47;"	e
 params	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\http.lua	192;"	e
@@ -1169,9 +1178,9 @@ pos:isColorClick	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\pos.lua
 pos:new	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\pos.lua	12;"	f
 pos:polarProjection	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\pos.lua	90;"	f
 pos:touchMoveTo	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\pos.lua	50;"	f
-postPunchData	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	27;"	e
+postPunchData	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	28;"	e
 post_data	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\baiduOCR\百度云OCR.lua	49;"	e
-post_data	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	29;"	e
+post_data	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	30;"	e
 power	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	326;"	e
 power	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	329;"	e
 power	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\md5.lua	62;"	e
@@ -1196,9 +1205,9 @@ psm	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\text.lua	2;"	e
 pump.all	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\ltn12.lua	293;"	f
 pump.step	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\ltn12.lua	285;"	f
 punch	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\main.lua	23;"	e
-punch	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	226;"	e
-punchIn	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	52;"	e
-punchOut	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	57;"	e
+punch	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	227;"	e
+punchIn	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	53;"	e
+punchOut	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	58;"	e
 putt	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\ftp.lua	204;"	e
 putt	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\ftp.lua	236;"	e
 query	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\http.lua	193;"	e
@@ -1261,8 +1270,8 @@ res	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	677;
 res	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	688;"	e
 res	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	690;"	e
 response_body	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\baiduOCR\百度云OCR.lua	48;"	e
-response_body	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	232;"	e
-response_body	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	30;"	e
+response_body	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	231;"	e
+response_body	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	31;"	e
 result	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	50;"	e
 result	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	807;"	e
 result	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	810;"	e
@@ -1274,7 +1283,7 @@ result	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	9
 result	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	987;"	e
 result	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\md5.lua	61;"	e
 result	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\md5.lua	64;"	e
-result	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	42;"	e
+result	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	43;"	e
 resultStrList	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\baiduOCR\HMAC-SHA256.lua	33;"	e
 result_value	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\JSON.lua	884;"	e
 result_value	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\JSON.lua	886;"	e
@@ -1299,7 +1308,8 @@ rgb	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\utils.lua	72;"	e
 rhs	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	289;"	e
 right	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\baiduOCR\HMAC-SHA256.lua	46;"	f
 right	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\baiduOCR\MathBit.lua	28;"	e
-rootview	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	245;"	e
+rootview	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	244;"	e
+rootview	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	255;"	e
 rot	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	832;"	e
 rot	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	837;"	e
 rot	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	839;"	e
@@ -1380,8 +1390,8 @@ sink	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\http.lua	162
 sink	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\http.lua	290;"	e
 sink	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\http.lua	345;"	e
 sink	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\tp.lua	102;"	e
-sink	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	236;"	e
-sink	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	39;"	e
+sink	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	235;"	e
+sink	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	40;"	e
 sink(snk,	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\tp.lua	76;"	f
 sink.chain	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\ltn12.lua	260;"	f
 sink.error	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\ltn12.lua	253;"	f
@@ -1424,7 +1434,7 @@ source	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\ftp.lua	15
 source	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\http.lua	138;"	e
 source	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\http.lua	174;"	e
 source	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\http.lua	289;"	e
-source	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	38;"	e
+source	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	39;"	e
 source(source,	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\tp.lua	101;"	f
 source.cat	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\ltn12.lua	194;"	f
 source.chain	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\ltn12.lua	143;"	f
@@ -1451,7 +1461,7 @@ start	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	57
 start	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	610;"	e
 start	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	890;"	e
 start	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\jueDouDaTing.lua	28;"	f
-startPunch	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	62;"	e
+startPunch	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	63;"	e
 startsWith	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	476;"	f
 state	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\baiduOCR\HMAC-SHA256.lua	92;"	e
 state	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\ltn12.lua	147;"	e
@@ -1577,6 +1587,7 @@ table	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\url.lua	12;
 table(t)	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\ltn12.lua	211;"	f
 table.keys	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\baiduOCR\百度云认证作者.lua	24;"	f
 tap	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\utils.lua	19;"	f
+targetTime	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	284;"	e
 targetTimes	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\jueDouDaTing.lua	92;"	e
 targetTimes	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\jueDouDaTing.lua	94;"	e
 tbl	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	209;"	e
@@ -1665,7 +1676,8 @@ uFcs16	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	9
 uFcs16	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	934;"	e
 uFcs32	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	943;"	e
 uFcs32	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	945;"	e
-uijson	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	253;"	e
+uijson	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	252;"	e
+uijson	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	268;"	e
 unescape(s)	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\url.lua	73;"	f
 unicode_codepoint_as_utf8	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\JSON.lua	304;"	f
 uright	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\baiduOCR\HMAC-SHA256.lua	51;"	f
@@ -1681,8 +1693,8 @@ url	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\url.lua	143;"
 url	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\url.lua	148;"	e
 url	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\url.lua	153;"	e
 url	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\url.lua	187;"	e
-url	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	234;"	e
-url	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	32;"	e
+url	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	233;"	e
+url	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	33;"	e
 urlDecode	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	529;"	f
 urlEncode	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\baiduOCR\百度云OCR.lua	20;"	f
 urlEncode	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\baiduOCR\百度云认证作者.lua	37;"	f
@@ -1695,7 +1707,7 @@ userinfo	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\url.lua	
 userinfo	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\url.lua	197;"	e
 userinfo	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\url.lua	199;"	e
 userinfo	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\socket\url.lua	201;"	e
-uuid	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	22;"	e
+uuid	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	23;"	e
 v	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\baiduOCR\百度云认证作者.lua	120;"	e
 v	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\md5.lua	206;"	e
 v	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\md5.lua	208;"	e
@@ -1706,7 +1718,7 @@ ver	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\systemInfo.lua	1;"	e
 views	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\UI.lua	155;"	e
 views	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\UI.lua	211;"	e
 width	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\UI.lua	207;"	e
-wxPunchType	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	18;"	e
+wxPunchType	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\views\punch.lua	19;"	e
 x	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	93;"	f
 x	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\pos.lua	31;"	e
 x	D:/用户目录/我的文档/xspworkspace/wxwork/xsp/src\bblibs\pos.lua	70;"	e
