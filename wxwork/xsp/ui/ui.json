@@ -1,0 +1,28 @@
+{
+   "style" : "default",
+   "config" : "save_wxwork.dat",
+   "width" : 660,
+   "height" : 600,
+   "cancelscroll" : true,
+   "countdown" : 1000,
+   "cancelname" : "取消",
+   "okname" : "确定",
+   "views" : [
+		{
+	        "align" : "center",
+	        "color" : "0,0,225",
+	        "size" : 30,
+	        "text" : "----------------企业微信打卡----------------",
+	        "type" : "Label"
+        },
+		{
+			"id" : "wxPunchType",
+			"list" : "打卡, 统计",
+			"select" : "0",
+			"size" : 30,
+			"type" : "RadioGroup",
+			"orientation" : "horizontal",
+			"color" : "0,0,225"
+		}
+   ]
+}
