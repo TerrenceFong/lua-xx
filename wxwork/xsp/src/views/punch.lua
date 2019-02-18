@@ -13,6 +13,9 @@ local DA_KA = '0'
 local TONG_JI = '1'
 local DING_SHI = '2'
 
+local BASE_URL = 'http://chi.fffffbw.cn:7001'
+--local BASE_URL = 'http://wx.ngrok.fffffbw.cn'
+
 local HUD = createHUD()
 --			hideHUD(id)     --隐藏HUD
 
@@ -30,7 +33,7 @@ local postPunchData = function()
 	local post_data = "uuid="..uuid.."&date="..getNow
 	local response_body = {}
 	local res, code, h = http.request {
-		url     = "http://wx.ngrok.fffffbw.cn/api/wxpunch",
+		url     = BASE_URL.."/api/wxpunch",
 		method  = "POST",
 		headers = {
 			['Content-Type']   = 'application/x-www-form-urlencoded',
@@ -230,7 +233,7 @@ local punch = function()
 	elseif wxPunchType == TONG_JI then
 		local response_body = {}
 		local res, code, h = http.request {
-			url     = "http://wx.ngrok.fffffbw.cn/api/wxpunch/"..uuid,
+			url     = BASE_URL.."/api/wxpunch/"..uuid,
 			method  = "GET",
 			sink    = ltn12.sink.table(response_body)
 		}
