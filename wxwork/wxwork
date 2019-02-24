@@ -16,6 +16,7 @@
 AUTHOR_NOTE	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\JSON.lua	18;"	e
 AUTHOR_NOTE	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\JSON.lua	27;"	e
 B4	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	877;"	e
+BASE_URL	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	16;"	e
 BCE_AUTH_VERSION	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\baiduOCR\百度云认证作者.lua	9;"	e
 BCE_PREFIX	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\baiduOCR\百度云认证作者.lua	10;"	e
 Base64	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\baiduOCR\百度云Base64编码.lua	2;"	e
@@ -64,7 +65,7 @@ HMAC_SHA256_key	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\baiduOCR\
 HMAC_SHA256_key	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\baiduOCR\HMAC-SHA256.lua	210;"	e
 HMAC_SHA256_key	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\baiduOCR\HMAC-SHA256.lua	215;"	e
 HMAC_SHA256_write	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\baiduOCR\HMAC-SHA256.lua	245;"	f
-HUD	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	16;"	e
+HUD	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	19;"	e
 ITEMS	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\JSON.lua	878;"	e
 Image	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\UI.lua	37;"	e
 Image:create	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\UI.lua	42;"	f
@@ -501,8 +502,8 @@ chars	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.
 chars	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	650;"	e
 chars	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	819;"	e
 check(ok)	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\tp.lua	49;"	f
-checkAppIsReady	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	198;"	e
-checkPunchStatus	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	106;"	e
+checkAppIsReady	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	201;"	e
+checkPunchStatus	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	109;"	e
 checkstep	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\ftp.lua	119;"	e
 choose	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\mime.lua	25;"	f
 choose(table)	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\socket.lua	58;"	f
@@ -545,7 +546,7 @@ connect4(address,	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\
 connect6(address,	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\socket.lua	23;"	f
 contains	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	466;"	f
 coroutine	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\smtp.lua	11;"	e
-countdown	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	286;"	e
+countdown	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	289;"	e
 crc	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	923;"	e
 create	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\http.lua	294;"	e
 create(id,	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\UI.lua	104;"	f
@@ -589,7 +590,7 @@ data	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\baiduOCR\百度云OCR.l
 data(src,	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\smtp.lua	60;"	f
 data32	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\baiduOCR\MathBit.lua	63;"	e
 data64	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\baiduOCR\MathBit.lua	64;"	e
-dateTable	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	279;"	e
+dateTable	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	282;"	e
 decimal_part	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\JSON.lua	418;"	e
 decode	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\baiduOCR\百度云Base64编码.lua	124;"	e
 decode	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\baiduOCR\百度云Base64编码.lua	137;"	e
@@ -618,8 +619,8 @@ distanceBetween(t)	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs
 done	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\ltn12.lua	270;"	e
 done	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\socket.lua	137;"	e
 e	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\baiduOCR\百度云Base64编码.lua	105;"	e
-editHour	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	259;"	e
-editMin	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	261;"	e
+editHour	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	262;"	e
+editMin	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	264;"	e
 empty	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\ltn12.lua	77;"	f
 empty()	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\ltn12.lua	81;"	f
 encode(text)	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\baiduOCR\百度云Base64编码.lua	16;"	f
@@ -669,8 +670,8 @@ filter.cycle	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socke
 filtered	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\ltn12.lua	269;"	e
 filtered	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\ltn12.lua	275;"	e
 find	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	586;"	f
-findPunch	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	139;"	e
-findWorkSpace	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	168;"	e
+findPunch	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	142;"	e
+findWorkSpace	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	171;"	e
 firstLetterUpper	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	497;"	f
 first_append	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	870;"	e
 fl	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\pos.lua	4;"	e
@@ -696,7 +697,7 @@ getCanonicalHeaders	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\baidu
 getCanonicalQueryString	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\baiduOCR\百度云认证作者.lua	52;"	f
 getHeadersToSign	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\baiduOCR\百度云认证作者.lua	94;"	f
 getJSON()	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\badboy.lua	5;"	f
-getNow	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	29;"	e
+getNow	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	32;"	e
 getStrUtils()	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\badboy.lua	20;"	f
 get_reply	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\tp.lua	27;"	f
 getcontrol()	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\tp.lua	97;"	f
@@ -743,7 +744,7 @@ headers	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\smt
 headers	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\smtp.lua	18;"	e
 headers	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\smtp.lua	191;"	e
 headers	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\smtp.lua	207;"	e
-headers	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	35;"	e
+headers	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	38;"	e
 headersToSign	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\baiduOCR\百度云认证作者.lua	143;"	e
 headersToSign	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\baiduOCR\百度云认证作者.lua	146;"	e
 headers_s	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\mbox.lua	23;"	e
@@ -763,7 +764,7 @@ highpart	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\JSON.lua	
 highpart	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\JSON.lua	353;"	e
 host	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\http.lua	212;"	e
 host	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\http.lua	242;"	e
-hour	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	275;"	e
+hour	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	278;"	e
 http	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\badboy.lua	72;"	e
 http	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\baiduOCR\百度云OCR.lua	46;"	e
 http	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\main.lua	42;"	e
@@ -813,8 +814,8 @@ index	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\pos.lua	30;"
 index	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\ltn12.lua	57;"	e
 index	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\ltn12.lua	62;"	e
 index	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\utils.lua	21;"	e
-info	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	238;"	e
 info	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	241;"	e
+info	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	244;"	e
 integer_part	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\JSON.lua	406;"	e
 io	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\mime.lua	13;"	e
 ip	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\ftp.lua	74;"	e
@@ -856,8 +857,8 @@ keys(t)	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\baiduOCR\百度云认
 l	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	931;"	e
 l	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	942;"	e
 lShiftOp(left,	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\baiduOCR\MathBit.lua	49;"	f
-label	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	247;"	e
-label	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	257;"	e
+label	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	250;"	e
+label	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	260;"	e
 lang	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\text.lua	5;"	e
 last	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	312;"	e
 last	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\md5.lua	107;"	e
@@ -991,8 +992,8 @@ metat.__index:source	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bbli
 metat.__index:type	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\ftp.lua	166;"	f
 method	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\baiduOCR\百度云OCR.lua	50;"	e
 method	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\baiduOCR\百度云OCR.lua	64;"	e
-method	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	234;"	e
-method	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	34;"	e
+method	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	237;"	e
+method	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	37;"	e
 midA	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\JSON.lua	355;"	e
 midB	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\JSON.lua	357;"	e
 midpart	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\JSON.lua	326;"	e
@@ -1000,7 +1001,7 @@ midpart	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\JSON.lua	3
 mime	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\http.lua	13;"	e
 mime	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\mime.lua	12;"	e
 mime	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\smtp.lua	19;"	e
-minute	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	276;"	e
+minute	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	279;"	e
 mode	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\http.lua	141;"	e
 mode	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\http.lua	166;"	e
 move	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\pos.lua	57;"	f
@@ -1047,7 +1048,7 @@ non_zero_message_bytes	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bb
 normalize	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\md5.lua	51;"	e
 normalize(marker)	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\mime.lua	81;"	f
 notOp(left)	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\baiduOCR\MathBit.lua	45;"	f
-nowTime	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	278;"	e
+nowTime	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	281;"	e
 nr	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\baiduOCR\MathBit.lua	100;"	e
 nr	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\baiduOCR\MathBit.lua	97;"	e
 nredirects	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\http.lua	293;"	e
@@ -1124,7 +1125,7 @@ p	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	
 p	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	855;"	e
 p	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	857;"	e
 padLen	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\md5.lua	356;"	e
-page	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	245;"	e
+page	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	248;"	e
 parameterStrings	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\baiduOCR\百度云认证作者.lua	58;"	e
 params	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\baiduOCR\百度云OCR.lua	47;"	e
 params	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\http.lua	192;"	e
@@ -1178,9 +1179,9 @@ pos:isColorClick	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\p
 pos:new	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\pos.lua	12;"	f
 pos:polarProjection	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\pos.lua	90;"	f
 pos:touchMoveTo	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\pos.lua	50;"	f
-postPunchData	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	28;"	e
+postPunchData	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	31;"	e
 post_data	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\baiduOCR\百度云OCR.lua	49;"	e
-post_data	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	30;"	e
+post_data	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	33;"	e
 power	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	326;"	e
 power	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	329;"	e
 power	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\md5.lua	62;"	e
@@ -1205,9 +1206,9 @@ psm	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\text.lua	2;"	e
 pump.all	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\ltn12.lua	293;"	f
 pump.step	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\ltn12.lua	285;"	f
 punch	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\main.lua	23;"	e
-punch	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	227;"	e
-punchIn	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	53;"	e
-punchOut	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	58;"	e
+punch	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	230;"	e
+punchIn	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	56;"	e
+punchOut	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	61;"	e
 putt	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\ftp.lua	204;"	e
 putt	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\ftp.lua	236;"	e
 query	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\http.lua	193;"	e
@@ -1270,8 +1271,8 @@ res	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lu
 res	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	688;"	e
 res	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	690;"	e
 response_body	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\baiduOCR\百度云OCR.lua	48;"	e
-response_body	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	231;"	e
-response_body	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	31;"	e
+response_body	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	234;"	e
+response_body	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	34;"	e
 result	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	50;"	e
 result	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	807;"	e
 result	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	810;"	e
@@ -1283,7 +1284,7 @@ result	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI
 result	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	987;"	e
 result	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\md5.lua	61;"	e
 result	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\md5.lua	64;"	e
-result	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	43;"	e
+result	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	46;"	e
 resultStrList	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\baiduOCR\HMAC-SHA256.lua	33;"	e
 result_value	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\JSON.lua	884;"	e
 result_value	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\JSON.lua	886;"	e
@@ -1308,8 +1309,8 @@ rgb	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\utils.lua	72;"
 rhs	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	289;"	e
 right	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\baiduOCR\HMAC-SHA256.lua	46;"	f
 right	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\baiduOCR\MathBit.lua	28;"	e
-rootview	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	244;"	e
-rootview	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	255;"	e
+rootview	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	247;"	e
+rootview	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	258;"	e
 rot	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	832;"	e
 rot	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	837;"	e
 rot	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	839;"	e
@@ -1390,8 +1391,8 @@ sink	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\http.l
 sink	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\http.lua	290;"	e
 sink	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\http.lua	345;"	e
 sink	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\tp.lua	102;"	e
-sink	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	235;"	e
-sink	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	40;"	e
+sink	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	238;"	e
+sink	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	43;"	e
 sink(snk,	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\tp.lua	76;"	f
 sink.chain	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\ltn12.lua	260;"	f
 sink.error	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\ltn12.lua	253;"	f
@@ -1434,7 +1435,7 @@ source	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\ftp.
 source	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\http.lua	138;"	e
 source	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\http.lua	174;"	e
 source	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\http.lua	289;"	e
-source	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	39;"	e
+source	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	42;"	e
 source(source,	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\tp.lua	101;"	f
 source.cat	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\ltn12.lua	194;"	f
 source.chain	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\ltn12.lua	143;"	f
@@ -1461,7 +1462,7 @@ start	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.
 start	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	610;"	e
 start	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	890;"	e
 start	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\jueDouDaTing.lua	28;"	f
-startPunch	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	63;"	e
+startPunch	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	66;"	e
 startsWith	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	476;"	f
 state	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\baiduOCR\HMAC-SHA256.lua	92;"	e
 state	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\ltn12.lua	147;"	e
@@ -1587,7 +1588,7 @@ table	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\url.l
 table(t)	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\ltn12.lua	211;"	f
 table.keys	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\baiduOCR\百度云认证作者.lua	24;"	f
 tap	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\utils.lua	19;"	f
-targetTime	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	284;"	e
+targetTime	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	287;"	e
 targetTimes	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\jueDouDaTing.lua	92;"	e
 targetTimes	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\jueDouDaTing.lua	94;"	e
 tbl	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	209;"	e
@@ -1676,8 +1677,8 @@ uFcs16	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI
 uFcs16	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	934;"	e
 uFcs32	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	943;"	e
 uFcs32	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	945;"	e
-uijson	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	252;"	e
-uijson	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	268;"	e
+uijson	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	255;"	e
+uijson	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	271;"	e
 unescape(s)	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\url.lua	73;"	f
 unicode_codepoint_as_utf8	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\JSON.lua	304;"	f
 uright	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\baiduOCR\HMAC-SHA256.lua	51;"	f
@@ -1693,8 +1694,8 @@ url	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\url.lua
 url	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\url.lua	148;"	e
 url	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\url.lua	153;"	e
 url	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\url.lua	187;"	e
-url	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	233;"	e
-url	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	33;"	e
+url	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	236;"	e
+url	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	36;"	e
 urlDecode	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	529;"	f
 urlEncode	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\baiduOCR\百度云OCR.lua	20;"	f
 urlEncode	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\baiduOCR\百度云认证作者.lua	37;"	f
@@ -1707,7 +1708,7 @@ userinfo	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\ur
 userinfo	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\url.lua	197;"	e
 userinfo	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\url.lua	199;"	e
 userinfo	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\socket\url.lua	201;"	e
-uuid	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	23;"	e
+uuid	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	26;"	e
 v	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\baiduOCR\百度云认证作者.lua	120;"	e
 v	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\md5.lua	206;"	e
 v	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\md5.lua	208;"	e
@@ -1718,7 +1719,7 @@ ver	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\systemInfo.lua	1;"	e
 views	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\UI.lua	155;"	e
 views	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\UI.lua	211;"	e
 width	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\UI.lua	207;"	e
-wxPunchType	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	19;"	e
+wxPunchType	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\views\punch.lua	22;"	e
 x	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\StrUtilsAPI.lua	93;"	f
 x	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\pos.lua	31;"	e
 x	C:/Users/akulaku/Documents/xspworkspace/wxwork/xsp/src\bblibs\pos.lua	70;"	e

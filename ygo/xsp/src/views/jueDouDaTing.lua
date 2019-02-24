@@ -53,7 +53,7 @@ local function failTask()
 	while true do
 		autoFight()
 		
-		mSleep(1000)
+		mSleep(10000)
 		
 --		while true do
 --			local x, y = findColor(
@@ -123,6 +123,8 @@ local function successTask(targetTimes)
 				returnPage()
 				times = times + 1
 				break
+			else
+				mSleep(5000)
 			end
 		end
 		

@@ -30,6 +30,8 @@ local function autoFight()
 		else
 --			return false
 		end
+		
+		mSleep(2000)
 	end
 end
 
