@@ -1,26 +1,34 @@
-local appName = "com.android.settings"
---local appName = "com.game.juedouzc"
+-- 打印 table
+local print_r = require('utils/printTable')
 
-r = runApp(appName)
-mSleep(5 * 1000);  --等待程序响应W
-sysLog(r)
+local device = function(cb)
+	local appName = "com.demea.conur"
 
-flag = appIsRunning(appName) --检测应用是否在运行
-sysLog(flag)
+	runSuccess = runApp(appName)
+	mSleep(5 * 1000)  --等待程序响应W
+--	sysLog(runSuccess)
 
-if r == 0 or flag == 1 then
-	appid = frontAppName()
-	sysLog(appid)
-	if appid == appName then 
-		dialog("已经打开"..appName, 5)
-		mSleep(3000)
-		closeApp(appName)
-		lua_exit()
+	isRun = appIsRunning(appName) --检测应用是否在运行
+	sysLog(isRun)
+
+	if runSuccess == 0 or isRun == 1 then
+		appid = frontAppName()
+		sysLog(appid)
+		if appid == appName then
+			toast("已经打开"..appName)
+			mSleep(1000)
+			-- 执行回调操作
+			cb()
+			closeApp(appName)
+			lua_exit()
+		else
+			toast("请打开 "..appName.." 再运行该脚本！")
+			mSleep(3000)
+			lua_exit()
+		end
 	else
-		dialog("请打开 "..appName.." 再运行该脚本！", 5)
-		mSleep(3000)
-		lua_exit()
+		toast("启动应用失败")
 	end
-else
-    dialog("启动应用失败", 5)
 end
+
+return device
