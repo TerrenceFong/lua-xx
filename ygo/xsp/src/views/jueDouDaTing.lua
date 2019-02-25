@@ -146,7 +146,10 @@ end
 -- type
 -- 1 胜利
 -- 2 失败
-local function jueDouDaTing(type, times)
+local function jueDouDaTing()
+	local type = _G.UIResults.ygoType
+	local times = _G.UIResults.winTimes
+
 	if (type == FAIL) then
 		failTask()
 	elseif (type == SUCCESS) then

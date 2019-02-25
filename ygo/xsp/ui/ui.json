@@ -1,23 +1,23 @@
 {
-   "style" : "default",
-   "config" : "save_test.dat",
-   "width" : 960,
-   "height" : 600,
-   "cancelscroll" : true,
-   "countdown" : 1000,
-   "cancelname" : "取消",
-   "okname" : "确定",
-   "views" : [
+	"style" : "default",
+	"config" : "save_test.dat",
+	"width" : 960,
+	"height" : 600,
+	"cancelscroll" : true,
+	"countdown" : 1000,
+	"cancelname" : "取消",
+	"okname" : "确定",
+	"views" : [
 		{
 	        "align" : "center",
 	        "color" : "0,0,225",
 	        "size" : 30,
-	        "text" : "-------------------------------- 决斗大厅 --------------------------------",
+	        "text" : "-------------------------------- 决斗之城 --------------------------------",
 	        "type" : "Label"
         },
 		{
-			"id" : "jueDouDaTingRadioGroup",
-			"list" : "大厅-赢, 大厅-输",
+			"id" : "ygoType",
+			"list" : "大厅-赢, 大厅-输, 巅峰对决",
 			"select" : "0",
 			"size" : 30,
 			"type" : "RadioGroup",
@@ -25,14 +25,14 @@
 			"color" : "0,0,225"
 		},
 		{
-	        "id" : "jueDouDaTingWinTimes",
+	        "id" : "winTimes",
 	        "align" : "left",
 	        "color" : "0,0,0",
 	        "kbtype" : "number",
-	        "prompt" : "决斗大厅：默认胜场 100",
+	        "prompt" : "默认胜场 100",
 	        "size" : 20,
 	        "text" : "",
 	        "type" : "Edit"
         }
-   ]
+	]
 }

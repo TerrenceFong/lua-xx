@@ -1,4 +1,8 @@
 sysLog("start")
+setScreenScale(750, 1334)    --在540*960分辨率的手机中开发了脚本，要在720*1280的设备中运行 --
+init("0", 1)
+
+-- 工具库
 local bb = require('badboy')
 -- 打印 table
 local print_r = require('utils/printTable')
@@ -6,8 +10,8 @@ local base = _G
 local jueDouDaTing = require('views.jueDouDaTing')
 local dianFeng = require('views.dianFeng')
 
-setScreenScale(750, 1334)    --在540*960分辨率的手机中开发了脚本，要在720*1280的设备中运行 --
-init("0", 1)
+-- 类型常量
+local DIAN_FENG = '2'
 
 -- ui --
 
@@ -18,15 +22,17 @@ if UIRet == 0 then
 	toast("用户按下了取消")
 elseif UIRet == 1 then
 	--如果获取到的ret的值是1
-	toast("用户按下了确定")
+	-- toast("用户按下了确定")
 	print_r(UIResults)
 	-- 将用户选择的值存入全局变量里 方便其他模块读取
 	base.UIResults = UIResults
-	local jueDouDaTingRadioGroup = UIResults.jueDouDaTingRadioGroup
-	local jueDouDaTingWinTimes = UIResults.jueDouDaTingWinTimes
+	local type = UIResults.ygoType
 	
-	jueDouDaTing(jueDouDaTingRadioGroup, jueDouDaTingWinTimes)
-
+	if type == DIAN_FENG then
+		dianFeng()
+	else
+		jueDouDaTing()
+	end
 end
 
 -- ui --
