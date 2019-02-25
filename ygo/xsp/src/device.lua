@@ -15,7 +15,8 @@ local device = function(cb)
 		appid = frontAppName()
 		sysLog(appid)
 		if appid == appName then
-			toast("已经打开"..appName)
+			-- toast("已经打开"..appName)
+			print("已经打开"..appName)
 			mSleep(1000)
 			-- 执行回调操作
 			cb()

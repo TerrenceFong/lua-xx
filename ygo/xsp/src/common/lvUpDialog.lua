@@ -10,6 +10,8 @@ local function lvUpDialog()
     if x > -1 then
         tab(667, 528)
     end
+    
+    mSleep(500)
 end
 
 return lvUpDialog

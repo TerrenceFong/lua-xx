@@ -5,7 +5,11 @@ local device = require('device')
 
 local autoFight = require('common.autoFight')
 local tab = require('common.tab')
+
+local login = require('common.login')
+local startDialogCheck = require('common.startDialogCheck')
 local findEntrance = require('common.findEntrance')
+
 local globalDialogError = require('common.globalDialogError')
 local lvUpDialog = require('common.lvUpDialog')
 
@@ -26,6 +30,20 @@ local DRAW = 'draw'
 -- hud 初始化
 local hud = createHUD()
 showHUD(hud, "胜："..successTimes..", 负："..failTimes..", 平："..drawTimes, 12, "0xffff0000", "0xffffffff", 0, 200, -5, 228, 32)
+
+local function restartApp()
+    mSleep(1000)
+    local flag = isFrontApp("com.demea.conur")
+    print(flag)
+    if flag == 1 then return end
+
+    device(function()
+        print('执行回调')
+        login()
+        startDialogCheck()
+        findEntrance(startFight)
+    end)
+end
 
 local function checkStatus()
     mSleep(1000)
@@ -54,8 +72,11 @@ end
 local function returnPage(cb)
     mSleep(1000)
     while true do
+        restartApp()
         -- 错误判断逻辑
+        globalDialogError()
         lvUpDialog()
+        -- 错误确认后不会自动点自动战斗（待定）
 
         local x, y = findColor(
             {394, 642, 548, 718},
@@ -95,7 +116,11 @@ local function startFight()
 	end
 
     while true do
+        restartApp()
+
         start()
+
+        restartApp()
 	
         autoFight()
         
@@ -138,6 +163,8 @@ local function startFight()
 end
 
 local function dianFeng()
+    -- 每周第一次进入时弹窗校验（待做）
+
     findEntrance(startFight)
 end
 
