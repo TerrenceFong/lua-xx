@@ -10,9 +10,11 @@ local print_r = require('utils/printTable')
 local base = _G
 local jueDouDaTing = require('views.jueDouDaTing')
 local dianFeng = require('views.dianFeng')
+local shuaShenQi = require('views.shuaShenQi')
 
 -- 类型常量
 local DIAN_FENG = '2'
+local SHUA_SHEN_QI = '3'
 
 -- ui --
 
@@ -31,6 +33,8 @@ elseif UIRet == 1 then
 	
 	if type == DIAN_FENG then
 		dianFeng()
+	elseif type == SHUA_SHEN_QI then
+		shuaShenQi()
 	else
 		jueDouDaTing()
 	end

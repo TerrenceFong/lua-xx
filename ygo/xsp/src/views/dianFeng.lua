@@ -9,6 +9,7 @@ local tab = require('common.tab')
 local login = require('common.login')
 local startDialogCheck = require('common.startDialogCheck')
 local findEntrance = require('common.findEntrance')
+local clickStart = require('common.clickStart')
 
 local globalDialogError = require('common.globalDialogError')
 local lvUpDialog = require('common.lvUpDialog')
@@ -36,20 +37,6 @@ local DRAW = 'draw'
 -- hud 初始化
 local hud = createHUD()
 showHUD(hud, "胜："..successTimes.."，负："..failTimes.."，平："..drawTimes.."，重开："..restartTimes, 12, "0xffff0000", "0xffffffff", 0, 200, -5, 228, 32)
-
--- 点击开始战斗
-local function start()
-    mSleep(1000)
-    local x, y = findColor(
-        {694, 539, 879, 606}, 
-        "702|542|0xfdba51,752|544|0xfeeabf,737|558|0xffbf48,737|574|0x996300,732|587|0x855400,731|599|0xd58b10,732|604|0xe69c2d,803|577|0xffff00,873|600|0xd0860b",
-        95, 0, 0, 0
-    )
-    if x > -1 then
-        tab(790, 570)
-        mSleep(1000)
-    end
-end
 
 local function restartCallBack()
     sysLog('重开回调')
@@ -85,7 +72,7 @@ local function restartCallBack()
         startDialogCheck()
         sysLog('重新进入战斗')
         findEntrance(function()
-            start()
+            clickStart()
             autoFight()
         end)
     end
@@ -204,7 +191,7 @@ local function startFight()
         sysLog('开始战斗前检测')
         restartApp()
 
-        start()
+        clickStart()
 
         sysLog('开始战斗后检测')
         restartApp()
