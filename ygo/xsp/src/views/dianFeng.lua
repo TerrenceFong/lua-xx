@@ -54,6 +54,10 @@ end
 local function restartCallBack()
     sysLog('重开回调')
 
+    restartTimes = restartTimes + 1
+    afterRestartNeedStart = true
+    showHUD(hud, "胜："..successTimes..", 负："..failTimes..", 平："..drawTimes..", 重开："..restartTimes, 12, "0xffff0000", "0xffffffff", 0, 200, -5, 228, 32)
+
     -- 等待 10 秒，或者更长。确保已经进入 开始推荐页 / 战斗页
     mSleep(10000)
 
@@ -70,6 +74,10 @@ local function restartCallBack()
         95, 0, 0, 0
     )
 
+    restartTimes = restartTimes + 1
+    afterRestartNeedStart = true
+    showHUD(hud, "胜："..successTimes..", 负："..failTimes..", 平："..drawTimes..", 重开："..restartTimes, 12, "0xffff0000", "0xffffffff", 0, 200, -5, 228, 32)
+
     if x1 > -1 then
         sysLog('重开后在战斗页面')
         autoFight()
@@ -84,10 +92,6 @@ local function restartCallBack()
             autoFight()
         end)
     end
-
-    restartTimes = restartTimes + 1
-    afterRestartNeedStart = true
-    showHUD(hud, "胜："..successTimes..", 负："..failTimes..", 平："..drawTimes..", 重开："..restartTimes, 12, "0xffff0000", "0xffffffff", 0, 200, -5, 228, 32)
 end
 
 local function restartApp()
