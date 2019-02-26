@@ -19,11 +19,14 @@ local function comfirm()
 end
 
 local function login()
-    print('登录校验')
+    sysLog('登录校验')
+    mSleep(1000)
+
     while true do
+        sysLog('未找到登录位置')
         local x, y = findColor(
-            {354, 61, 978, 686}, 
-            "0|0|0x00cc66,494|0|0x00cc66,35|-306|0xffffff,43|-178|0xffffff",
+            {383, 176, 945, 576}, 
+            "0|0|0xffffff,2|125|0xffffff,4|303|0x00cc66,83|331|0x00cc66,253|331|0x00cc66,504|300|0x00cc66,503|355|0x00cc66",
             95, 0, 0, 0
         )
         if x > -1 then

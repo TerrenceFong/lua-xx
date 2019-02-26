@@ -4,7 +4,9 @@ local tab = require('common.tab')
 
 -- 今日任务
 local function todayTask()
-    print('今日任务校验')
+    sysLog('今日任务校验')
+    local todayTaskCount = 0
+
     while true do
         local x, y = findColor(
             {374, 156, 952, 232}, 
@@ -16,13 +18,20 @@ local function todayTask()
             break
         end
 
+        if todayTaskCount >= 10 then
+            sysLog('今日任务校验退出')
+            break
+        else
+            todayTaskCount = todayTaskCount + 1
+        end
+
         mSleep(1000)
     end
 end
 
 -- 推荐 banner
 local function startDialogCheck()
-    print('推荐弹窗校验')
+    sysLog('推荐弹窗校验')
     mSleep(5000)
     local count = 0
 
@@ -40,6 +49,7 @@ local function startDialogCheck()
 
         if count >= 20 then
             todayTask()
+            sysLog('推荐弹窗校验退出')
             break
         end
 

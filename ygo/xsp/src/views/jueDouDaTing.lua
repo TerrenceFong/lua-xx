@@ -82,7 +82,7 @@ local function failTask()
 			break
 		end
 	end
-	print('fail finish')
+	sysLog('fail finish')
 end
 
 local function successTask(targetTimes)
@@ -129,7 +129,7 @@ local function successTask(targetTimes)
 		end
 		
 		mSleep(1000)
-		print('胜利次数：'..times)
+		sysLog('胜利次数：'..times)
 		if times == targetTimes then
 			isFinish = true
 		end
@@ -140,7 +140,7 @@ local function successTask(targetTimes)
 		
 		mSleep(1000)
 	end
-	print('success finish')
+	sysLog('success finish')
 end
 
 -- type
