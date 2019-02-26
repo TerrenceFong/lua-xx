@@ -35,7 +35,7 @@ local DRAW = 'draw'
 
 -- hud 初始化
 local hud = createHUD()
-showHUD(hud, "胜："..successTimes..", 负："..failTimes..", 平："..drawTimes..", 重开："..restartTimes, 12, "0xffff0000", "0xffffffff", 0, 200, -5, 228, 32)
+showHUD(hud, "胜："..successTimes.."，负："..failTimes.."，平："..drawTimes.."，重开："..restartTimes, 12, "0xffff0000", "0xffffffff", 0, 200, -5, 228, 32)
 
 -- 点击开始战斗
 local function start()
@@ -56,7 +56,7 @@ local function restartCallBack()
 
     restartTimes = restartTimes + 1
     afterRestartNeedStart = true
-    showHUD(hud, "胜："..successTimes..", 负："..failTimes..", 平："..drawTimes..", 重开："..restartTimes, 12, "0xffff0000", "0xffffffff", 0, 200, -5, 228, 32)
+    showHUD(hud, "胜："..successTimes.."，负："..failTimes.."，平："..drawTimes.."，重开："..restartTimes, 12, "0xffff0000", "0xffffffff", 0, 200, -5, 228, 32)
 
     -- 等待 10 秒，或者更长。确保已经进入 开始推荐页 / 战斗页
     mSleep(10000)
@@ -74,13 +74,10 @@ local function restartCallBack()
         95, 0, 0, 0
     )
 
-    restartTimes = restartTimes + 1
-    afterRestartNeedStart = true
-    showHUD(hud, "胜："..successTimes..", 负："..failTimes..", 平："..drawTimes..", 重开："..restartTimes, 12, "0xffff0000", "0xffffffff", 0, 200, -5, 228, 32)
-
     if x1 > -1 then
         sysLog('重开后在战斗页面')
         autoFight()
+        sysLog('重置自动战斗状态成功！')
     else
         sysLog('重开后不在战斗页面')
         sysLog('重置 判断重开后是否需要从今日任务页进入')
@@ -109,27 +106,35 @@ local function restartApp()
     end)
 end
 
+-- 检测胜利 失败 平
 local function checkStatus()
     mSleep(1000)
+    keepScreen(true)
 
+    sysLog('是否胜利')
     local x1, y1 = findColor(
         {270, 143, 1101, 593}, 
         "460|183|0xa0c9c8,514|187|0xfffffd,569|195|0x10717e,507|298|0x7e7975,510|385|0x6d6864,529|540|0xeb2309,591|343|0xa50b07,595|520|0x8e8986",
         95, 0, 0, 0
     )
     if x1 > -1 then
+        sysLog('胜利')
         return WIN
     end
 
+    sysLog('是否失败')
     local x2, y2 = findColor(
         {270, 143, 1101, 593}, 
         "497|191|0x048d8d,548|178|0x7ac6d5,504|247|0xfffeae,539|281|0x181310,503|360|0x555f2a,483|422|0x043732,474|515|0x4f3831,611|525|0x572418",
         95, 0, 0, 0
     )
     if x2 > -1 then
+        sysLog('失败')
         return LOSE
     end
 
+    keepScreen(false)
+    sysLog('平局')
     return DRAW
 end
 
@@ -141,6 +146,7 @@ local function returnPage(cb)
         -- 错误判断逻辑
         globalDialogError()
         lvUpDialog()
+        sysLog('弹窗错误通过')
         -- 错误确认后不会自动点自动战斗（待定）
         -- 假如错误判断后，战斗已经结束，要怎么跳出循环？
 
@@ -214,7 +220,7 @@ local function startFight()
             else
                 drawTimes = drawTimes + 1
             end
-            showHUD(hud, "胜："..successTimes..", 负："..failTimes..", 平："..drawTimes..", 重开："..restartTimes, 12, "0xffff0000", "0xffffffff", 0, 200, -5, 228, 32)
+            showHUD(hud, "胜："..successTimes.."，负："..failTimes.."，平："..drawTimes.."，重开："..restartTimes, 12, "0xffff0000", "0xffffffff", 0, 200, -5, 228, 32)
         end)
 
         mSleep(1000)
