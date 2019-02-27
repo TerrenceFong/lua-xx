@@ -28,6 +28,13 @@ local WIN = 'win'
 local LOSE = 'lose'
 local DRAW = 'draw'
 
+local accountList = {
+    'aaa111',
+    'aaa112',
+    'aaa113',
+    'aaa114'
+}
+
 -- hud 初始化
 local hud = createHUD()
 showHUD(hud, "胜："..successTimes.."，负："..failTimes.."，平："..drawTimes, 12, "0xffff0000", "0xffffffff", 0, 200, -5, 228, 32)
@@ -35,11 +42,14 @@ showHUD(hud, "胜："..successTimes.."，负："..failTimes.."，平："..drawTi
 local function shuaShenQi()
     tab(630, 230)
     mSleep(1000)
+    sysLog('清空输入框')
     inputText("#CLEAR#") --删除输入框中的文字（假设输入框中已存在文字）
     mSleep(1000)
+    sysLog('填入账号到输入框')
     inputText("Welcome.#ENTER#")
     mSleep(1000)
-    tab(1203, 704)
+    sysLog('隐藏输入法')
+    tab(1230, 390)
 end
 
 return shuaShenQi

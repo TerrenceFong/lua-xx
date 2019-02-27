@@ -1,8 +1,15 @@
 -- 自动战斗
 
-local function autoFight()
+local function autoFight(cb)
 	local successAuto = false
+	local count = 0
+
 	while true do
+		if (type(cb) == 'function') then
+			sysLog('检测自动战斗中')
+			cb()
+		end
+
 		-- 检查是否为手动
 		local x1, y1 = findColor(
 			{0, 148, 85, 229}, 
@@ -30,7 +37,14 @@ local function autoFight()
 		else
 --			return false
 		end
-		
+
+		if count >= 5 then
+            sysLog('检测自动战斗--超时退出循环')
+            break
+        else
+            count = count + 1
+        end
+
 		mSleep(2000)
 	end
 end

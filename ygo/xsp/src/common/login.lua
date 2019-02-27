@@ -18,18 +18,24 @@ local function comfirm()
     end
 end
 
-local function login()
+local function login(cb)
     sysLog('登录校验')
     mSleep(1000)
 
     while true do
-        sysLog('未找到登录位置')
+        sysLog('检测登录页面中')
+
         local x, y = findColor(
             {383, 176, 945, 576}, 
             "0|0|0xffffff,2|125|0xffffff,4|303|0x00cc66,83|331|0x00cc66,253|331|0x00cc66,504|300|0x00cc66,503|355|0x00cc66",
             95, 0, 0, 0
         )
         if x > -1 then
+            if (type(cb) == 'function') then
+                sysLog('开始切换账号')
+                cb()
+            end
+
             tab(670, 522)
             comfirm()
             break

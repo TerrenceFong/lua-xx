@@ -10,6 +10,7 @@ local function clickStart()
     )
     if x > -1 then
         tab(790, 570)
+        sysLog('已点击开始战斗')
         mSleep(1000)
     end
 end
