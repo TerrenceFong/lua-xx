@@ -1,18 +1,19 @@
 -- 打印 table
 local print_r = require('utils/printTable')
 
-local device = function(cb)
+local device = function(cb, isClose)
+	isClose = isClose or false
 	local appName = "com.demea.conur"
 
-	runSuccess = runApp(appName)
+	local runSuccess = runApp(appName)
 	mSleep(5 * 1000)  --等待程序响应W
---	sysLog(runSuccess)
+	sysLog(runSuccess)
 
-	isRun = appIsRunning(appName) --检测应用是否在运行
+	local isRun = appIsRunning(appName) --检测应用是否在运行
 	sysLog(isRun)
 
 	if runSuccess == 0 or isRun == 1 then
-		appid = frontAppName()
+		local appid = frontAppName()
 		sysLog(appid)
 		if appid == appName then
 			-- toast("已经打开"..appName)
@@ -20,7 +21,10 @@ local device = function(cb)
 			mSleep(1000)
 			-- 执行回调操作
 			cb()
-			-- closeApp(appName)
+			-- 关闭 app
+			if isClose == true then
+				closeApp(appName)
+			end
 			-- lua_exit()
 		else
 			sysLog("请打开 "..appName.." 再运行该脚本！")
@@ -30,6 +34,8 @@ local device = function(cb)
 	else
 		sysLog("启动应用失败")
 	end
+
+	sysLog('开启应用流程结束')
 end
 
 return device
