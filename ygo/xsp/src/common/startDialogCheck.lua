@@ -30,9 +30,8 @@ local function todayTask()
 end
 
 -- 推荐 banner
-local function startDialogCheck()
+local function recommendBanner()
     sysLog('推荐弹窗校验')
-    mSleep(5000)
     local count = 0
 
     while true do
@@ -50,6 +49,40 @@ local function startDialogCheck()
         if count >= 20 then
             todayTask()
             sysLog('推荐弹窗校验退出')
+            break
+        end
+
+        mSleep(1000)
+    end
+
+    mSleep(500)
+end
+
+-- 每日签到
+local function startDialogCheck()
+    sysLog('每日签到校验')
+    mSleep(5000)
+    local count = 0
+
+    while true do
+        local x, y = findColor(
+            {1059, 23, 1173, 93}, 
+            "0|0|0xf67b4d,13|-1|0xf68b66,49|-5|0x8c91a5,59|-6|0xfafcfc,71|5|0xb1bbce,68|33|0xdf8c72,14|32|0x941301,37|16|0xfdfbfc",
+            95, 0, 0, 0
+        )
+        if x > -1 then
+            mSleep(500)
+            tab(1124, 58)
+            recommendBanner()
+            sysLog('每日签到校验退出')
+            break
+        else
+            count = count + 1
+        end
+
+        if count >= 10 then
+            recommendBanner()
+            sysLog('每日签到校验退出')
             break
         end
 

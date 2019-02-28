@@ -10,6 +10,7 @@ local login = require('common.login')
 local startDialogCheck = require('common.startDialogCheck')
 local findEntrance = require('common.findEntrance')
 local clickStart = require('common.clickStart')
+local checkStatus = require('common.checkStatus')
 
 local globalDialogError = require('common.globalDialogError')
 local lvUpDialog = require('common.lvUpDialog')
@@ -36,7 +37,6 @@ local DRAW = 'draw'
 
 -- hud 初始化
 local hud = createHUD()
-showHUD(hud, "胜："..successTimes.."，负："..failTimes.."，平："..drawTimes.."，重开："..restartTimes, 12, "0xffff0000", "0xffffffff", 0, 200, -5, 228, 32)
 
 local function restartCallBack()
     sysLog('重开回调')
@@ -93,40 +93,6 @@ local function restartApp()
     end)
 end
 
--- 检测胜利 失败 平
-local function checkStatus()
-    mSleep(1000)
-    
-    keepScreen(true)
-    local x1, y1 = findColor(
-        {270, 143, 1101, 593}, 
-        "460|183|0xa0c9c8,514|187|0xfffffd,569|195|0x10717e,507|298|0x7e7975,510|385|0x6d6864,529|540|0xeb2309,591|343|0xa50b07,595|520|0x8e8986",
-        95, 0, 0, 0
-    )
-
-    local x2, y2 = findColor(
-        {270, 143, 1101, 593}, 
-        "497|191|0x048d8d,548|178|0x7ac6d5,504|247|0xfffeae,539|281|0x181310,503|360|0x555f2a,483|422|0x043732,474|515|0x4f3831,611|525|0x572418",
-        95, 0, 0, 0
-    )
-    keepScreen(false)
-
-    sysLog('是否胜利')
-    if x1 > -1 then
-        sysLog('胜利')
-        return WIN
-    end
-    
-    sysLog('是否失败')
-    if x2 > -1 then
-        sysLog('失败')
-        return LOSE
-    end
-
-    sysLog('平局')
-    return DRAW
-end
-
 local function returnPage(cb)
     mSleep(1000)
     while true do
@@ -173,9 +139,9 @@ local function luaExitCtrl()
 end
 
 -- onBeforeUserExit 脚本运行终止回调 xx专属回调
-function onBeforeUserExit()
-    luaExitCtrl()
-end
+-- function onBeforeUserExit()
+--     luaExitCtrl()
+-- end
 
 local function startFight()
     -- 设置默认值
@@ -236,7 +202,7 @@ local function startFight()
 end
 
 local function dianFeng()
-    -- 每周第一次进入时弹窗校验（待做）
+    showHUD(hud, "胜："..successTimes.."，负："..failTimes.."，平："..drawTimes.."，重开："..restartTimes, 12, "0xffff0000", "0xffffffff", 0, 200, -5, 228, 32)
 
     findEntrance(startFight)
 end

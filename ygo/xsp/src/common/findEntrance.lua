@@ -1,5 +1,20 @@
 local tab = require('common.tab')
 
+-- 关闭每周段位重置弹窗
+local function closeWeekRankReset()
+    mSleep(3000)
+    local x, y = findColor(
+        {353, 174, 979, 574}, 
+        "0|0|0x4e5262,573|-8|0xf4e0ca,583|0|0xd77e3d,579|340|0x9ca1c2,-3|344|0x606081,286|14|0x0083ff,282|158|0x30324b,286|281|0xb6e971,288|318|0x578a0b",
+        95, 0, 0, 0
+    )
+    if x > -1 then
+        mSleep(1000)
+        tab(935, 215)
+    end
+    mSleep(1000)
+end
+
 -- 查找入口
 local function findEntrance(cb)
     local x, y = findColor(
@@ -10,6 +25,7 @@ local function findEntrance(cb)
     if x > -1 then
         mSleep(1000)
         tab(1015, 350)
+        closeWeekRankReset()
         cb()
     end
 end
