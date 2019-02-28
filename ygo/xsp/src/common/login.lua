@@ -25,17 +25,22 @@ local function login(cb)
     while true do
         sysLog('检测登录页面中')
 
+        keepScreen(true)
         local x, y = findColor(
-            {383, 176, 945, 576}, 
-            "0|0|0xffffff,2|125|0xffffff,4|303|0x00cc66,83|331|0x00cc66,253|331|0x00cc66,504|300|0x00cc66,503|355|0x00cc66",
-            95, 0, 0, 0
+            {389, 174, 942, 570}, 
+            "0|0|0xffffff,-2|130|0xffffff,1|314|0x00cc66,505|308|0x00cc66,492|147|0xc8cac8,483|147|0xffffff,254|335|0x00cc66,-21|-19|0x353636",
+            95, 0, 0, 1
         )
+        keepScreen(false)
+
         if x > -1 then
+            sysLog('找到登录页面，准备后续登录操作')
             if (type(cb) == 'function') then
                 sysLog('开始切换账号')
                 cb()
             end
-
+            mSleep(1500)
+            sysLog('准备点击登录')
             tab(670, 522)
             comfirm()
             break
