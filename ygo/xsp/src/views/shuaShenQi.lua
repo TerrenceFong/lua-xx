@@ -75,7 +75,7 @@ local function startFight()
     local targetTimes = _G.UIResults.winTimes
     if (targetTimes == "") then
         -- 神器的30次就可以了
-		targetTimes = 1
+		targetTimes = 30
 	else
 		targetTimes = tonumber(targetTimes)
 	end
