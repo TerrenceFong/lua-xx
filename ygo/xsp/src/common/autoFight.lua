@@ -38,7 +38,7 @@ local function autoFight(cb)
 --			return false
 		end
 
-		if count >= 5 then
+		if count >= 20 then
             sysLog('检测自动战斗--超时退出循环')
             break
         else

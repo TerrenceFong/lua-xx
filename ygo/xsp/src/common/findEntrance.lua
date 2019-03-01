@@ -3,6 +3,7 @@ local tab = require('common.tab')
 -- 关闭每周段位重置弹窗
 local function closeWeekRankReset()
     mSleep(3000)
+    sysLog('检查是否需要关闭段位重置弹窗')
     local x, y = findColor(
         {353, 174, 979, 574}, 
         "0|0|0x4e5262,573|-8|0xf4e0ca,583|0|0xd77e3d,579|340|0x9ca1c2,-3|344|0x606081,286|14|0x0083ff,282|158|0x30324b,286|281|0xb6e971,288|318|0x578a0b",
@@ -11,6 +12,9 @@ local function closeWeekRankReset()
     if x > -1 then
         mSleep(1000)
         tab(935, 215)
+        sysLog('已关闭段位重置弹窗')
+    else
+        sysLog('未发现段位重置弹窗')
     end
     mSleep(1000)
 end
