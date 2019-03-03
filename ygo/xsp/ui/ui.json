@@ -25,6 +25,12 @@
 			"color" : "0,0,225"
 		},
 		{
+            "id" : "line",
+            "type" : "Line",
+            "color" : "255,255,255",
+	        "height" : 1
+        },
+		{
 	        "id" : "winTimes",
 	        "align" : "left",
 	        "color" : "0,0,0",
@@ -33,6 +39,21 @@
 	        "size" : 20,
 	        "text" : "",
 	        "type" : "Edit"
+        },
+		{
+            "id" : "line",
+            "type" : "Line",
+            "color" : "255,255,255",
+	        "height" : 1
+        },
+		{
+	        "id" : "isRestart",
+	        "list" : " 是否需要重开检查",
+	        "select" : "0",
+	        "size" : 25,
+	        "type" : "CheckBoxGroup",
+	        "orientation" : "horizontal",
+	        "color" : "0,0,225"
         }
 	]
 }

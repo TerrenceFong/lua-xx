@@ -79,18 +79,22 @@ local function restartCallBack()
 end
 
 local function restartApp()
-    mSleep(1000)
-    local flag = isFrontApp("com.demea.conur")
-    sysLog('判断是否要重开：0 == 不在前台运行；1 == 在前台运行')
-    sysLog('当前状态码：'..flag)
-    if flag == 1 then return end
+    local isRestart = _G.UIResults.isRestart
+    -- 判断是否勾选重开
+    if isRestart == '0' then
+        mSleep(1000)
+        local flag = isFrontApp("com.demea.conur")
+        sysLog('判断是否要重开：0 == 不在前台运行；1 == 在前台运行')
+        sysLog('当前状态码：'..flag)
+        if flag == 1 then return end
 
-    sysLog('需要重开')
+        sysLog('需要重开')
 
-    device(function()
-        login()
-        restartCallBack()
-    end)
+        device(function()
+            login()
+            restartCallBack()
+        end)
+    end
 end
 
 local function returnPage(cb)

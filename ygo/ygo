@@ -316,6 +316,7 @@ abc	D:/用户目录/我的文档/xspworkspace/ygo/xsp/src\baiduOCR\百度云Base64编码.lua	
 absolute(base_url,	D:/用户目录/我的文档/xspworkspace/ygo/xsp/src\bblibs\socket\url.lua	221;"	f
 absolute_path	D:/用户目录/我的文档/xspworkspace/ygo/xsp/src\bblibs\socket\url.lua	87;"	f
 accessKeyId	D:/用户目录/我的文档/xspworkspace/ygo/xsp/src\baiduOCR\百度云认证作者.lua	6;"	e
+accountHUD	D:/用户目录/我的文档/xspworkspace/ygo/xsp/src\views\shuaShenQi.lua	115;"	e
 accountList	D:/用户目录/我的文档/xspworkspace/ygo/xsp/src\views\shuaShenQi.lua	31;"	e
 addView(view)	D:/用户目录/我的文档/xspworkspace/ygo/xsp/src\bblibs\UI.lua	166;"	f
 addView(view)	D:/用户目录/我的文档/xspworkspace/ygo/xsp/src\bblibs\UI.lua	221;"	f
@@ -702,7 +703,7 @@ filter.cycle	D:/用户目录/我的文档/xspworkspace/ygo/xsp/src\bblibs\socket\ltn12.l
 filtered	D:/用户目录/我的文档/xspworkspace/ygo/xsp/src\bblibs\socket\ltn12.lua	269;"	e
 filtered	D:/用户目录/我的文档/xspworkspace/ygo/xsp/src\bblibs\socket\ltn12.lua	275;"	e
 find	D:/用户目录/我的文档/xspworkspace/ygo/xsp/src\bblibs\StrUtilsAPI.lua	586;"	f
-findEntrance	D:/用户目录/我的文档/xspworkspace/ygo/xsp/src\common\findEntrance.lua	19;"	f
+findEntrance	D:/用户目录/我的文档/xspworkspace/ygo/xsp/src\common\findEntrance.lua	23;"	f
 findEntrance	D:/用户目录/我的文档/xspworkspace/ygo/xsp/src\views\dianFeng.lua	11;"	e
 findEntrance	D:/用户目录/我的文档/xspworkspace/ygo/xsp/src\views\shuaShenQi.lua	12;"	e
 finishAccountTimes	D:/用户目录/我的文档/xspworkspace/ygo/xsp/src\views\shuaShenQi.lua	110;"	e
