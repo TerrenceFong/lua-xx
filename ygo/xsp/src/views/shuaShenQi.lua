@@ -49,6 +49,7 @@ local function returnPage(cb)
             95, 0, 0, 0
         )
         if x > -1 then
+            mSleep(500)
             cb()
             tab(475, 680)
             break
@@ -66,7 +67,7 @@ local function startFight()
     showHUD(hud, "胜："..successTimes.."，负："..failTimes.."，平："..drawTimes.."，号："..finishAccountTimes, 12, "0xffff0000", "0xffffffff", 0, 200, -5, 228, 32)
 
     -- 目标胜利场次
-    local targetTimes = _G.UIResults.winTimes
+    local targetTimes = _G.UIResults.shenqiWinTimes
     if (targetTimes == "") then
         -- 神器的30次就可以了
 		targetTimes = 30

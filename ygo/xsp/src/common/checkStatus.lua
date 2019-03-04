@@ -4,7 +4,8 @@ local DRAW = 'draw'
 
 -- 检测胜利 失败 平
 local function checkStatus()
-    mSleep(1000)
+    sysLog('判断胜负状态')
+    mSleep(1500)
     
     keepScreen(true)
     local x1, y1 = findColor(

@@ -41,11 +41,15 @@
 	        "type" : "Edit"
         },
 		{
-            "id" : "line",
-            "type" : "Line",
-            "color" : "255,255,255",
-	        "height" : 1
-        },
+			"id": "shenqiWinTimes",
+			"align": "left",
+			"color": "0,0,0",
+			"kbtype": "number",
+			"prompt": "默认胜场 30",
+			"size": 20,
+			"text": "",
+			"type": "Edit"
+		},
 		{
 	        "id" : "isRestart",
 	        "list" : " 是否需要重开检查",
