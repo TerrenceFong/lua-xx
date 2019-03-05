@@ -41,23 +41,39 @@
 	        "type" : "Edit"
         },
 		{
+			"id": "isRestart",
+			"list": " 是否需要重开检查",
+			"select": "0",
+			"size": 25,
+			"type": "CheckBoxGroup",
+			"orientation": "horizontal",
+			"color": "0,0,225"
+		},
+		{
 			"id": "shenqiWinTimes",
 			"align": "left",
 			"color": "0,0,0",
 			"kbtype": "number",
-			"prompt": "默认胜场 30",
+			"prompt": "神器默认胜场 30",
 			"size": 20,
 			"text": "",
 			"type": "Edit"
 		},
 		{
-	        "id" : "isRestart",
-	        "list" : " 是否需要重开检查",
-	        "select" : "0",
-	        "size" : 25,
-	        "type" : "CheckBoxGroup",
-	        "orientation" : "horizontal",
-	        "color" : "0,0,225"
-        }
+			"id": "shenqiFirstWinTimes",
+			"align": "left",
+			"color": "0,0,0",
+			"kbtype": "number",
+			"prompt": "神器第一个号应刷胜场 30",
+			"size": 20,
+			"text": "",
+			"type": "Edit"
+		},
+		{
+			"id": "line",
+			"type": "Line",
+			"color": "255,255,255",
+			"height": 2
+		}
 	]
 }

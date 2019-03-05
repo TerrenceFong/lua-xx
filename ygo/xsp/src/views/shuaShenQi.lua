@@ -59,7 +59,7 @@ local function returnPage(cb)
     end
 end
 
-local function startFight()
+local function startFight(pos)
     -- 胜利/失败/平场次
     local successTimes = 0
     local failTimes = 0
@@ -73,6 +73,14 @@ local function startFight()
 		targetTimes = 30
 	else
 		targetTimes = tonumber(targetTimes)
+    end
+    -- 神器第一个号的胜场数
+    local shenqiFirstWinTimes = _G.UIResults.shenqiFirstWinTimes
+    if (shenqiFirstWinTimes == "") then
+        -- 神器的30次就可以了
+		shenqiFirstWinTimes = 30
+	else
+		shenqiFirstWinTimes = tonumber(shenqiFirstWinTimes)
 	end
 
     while true do
@@ -94,9 +102,16 @@ local function startFight()
 
         mSleep(1000)
         -- 循环终止条件
-        if successTimes == targetTimes then
-			break
+        if pos == 1 then
+            if successTimes == shenqiFirstWinTimes then
+                break
+            end
+        else
+            if successTimes == targetTimes then
+                break
+            end
         end
+        
 		
 		mSleep(1000)
     end
@@ -148,6 +163,8 @@ local function shuaShenQi()
 
         sysLog('开始遍历账号')
         for i, v in ipairs(selectAccountList) do
+            -- 先隐藏胜负场的 hud，避免账号输入找图时失败
+            hideHUD(hud)
             sysLog('当前账号为：'..v)
             showHUD(accountHUD, "当前账号为："..v, 16, "0xffff0000", "msgbox_click.png", 3, 0, 40, 300, 25)
             device(function()
@@ -157,7 +174,9 @@ local function shuaShenQi()
                 end)
                 startDialogCheck()
                 sysLog('进入战斗')
-                findEntrance(startFight)
+                findEntrance(function()
+                    startFight(i)
+                end)
             end, true)
             mSleep(3000)
         end
