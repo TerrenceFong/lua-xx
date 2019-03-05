@@ -90,6 +90,8 @@ local function restartApp()
 
         sysLog('需要重开')
 
+        -- 先隐藏胜负场的 hud，避免账号输入找图时失败
+        hideHUD(hud)
         device(function()
             login()
             restartCallBack()
