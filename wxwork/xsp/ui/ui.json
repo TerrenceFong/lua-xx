@@ -1,28 +1,42 @@
 {
-   "style" : "default",
-   "config" : "save_wxwork.dat",
-   "width" : 660,
-   "height" : 600,
-   "cancelscroll" : true,
-   "countdown" : 1000,
-   "cancelname" : "取消",
-   "okname" : "确定",
-   "views" : [
+	"style": "default",
+	"config": "save_wxwork.dat",
+	"width": 660,
+	"height": 600,
+	"cancelscroll": true,
+	"countdown": 1000,
+	"cancelname": "取消",
+	"okname": "确定",
+	"views": [
 		{
-	        "align" : "center",
-	        "color" : "0,0,225",
-	        "size" : 30,
-	        "text" : "----------------企业微信打卡----------------",
-	        "type" : "Label"
-        },
+			"align": "center",
+			"color": "0,0,225",
+			"size": 30,
+			"text": "----------------企业微信打卡----------------",
+			"type": "Label"
+		},
 		{
-			"id" : "wxPunchType",
-			"list" : "打卡, 统计, 定时打卡",
-			"select" : "0",
-			"size" : 30,
-			"type" : "RadioGroup",
-			"orientation" : "horizontal",
-			"color" : "0,0,225"
+			"id": "wxPunchType",
+			"list": "打卡, 统计, 定时打卡",
+			"select": "0",
+			"size": 30,
+			"type": "RadioGroup",
+			"orientation": "horizontal",
+			"color": "0,0,225"
+		},
+		{
+			"id": "yearSelect",
+			"list": "2019, 2020, 2021",
+			"select": "0",
+			"size": 30,
+			"type": "ComboBox"
+		},
+		{
+			"id": "monthSelect",
+			"list": "1月, 2月, 3月, 4月, 5月, 6月, 7月, 8月, 9月, 10月, 11月, 12月",
+			"select": "0",
+			"size": 30,
+			"type": "ComboBox"
 		}
-   ]
+	]
 }

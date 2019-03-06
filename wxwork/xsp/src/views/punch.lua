@@ -13,14 +13,24 @@ local DA_KA = '0'
 local TONG_JI = '1'
 local DING_SHI = '2'
 
+local yearMap = {'2019', '2020', '2021'}
+local monthMap = {'01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'}
+
 local BASE_URL = 'http://chi.fffffbw.cn:7001'
 --local BASE_URL = 'http://wx.ngrok.fffffbw.cn'
 
 local HUD = createHUD()
---			hideHUD(id)     --隐藏HUD
 
 local wxPunchType = _G.UIResults.wxPunchType
+-- lua table 第一位的索引是 1
+local yearSelectIndex = tonumber(_G.UIResults.yearSelect) + 1
+local monthSelectIndex = tonumber(_G.UIResults.monthSelect) + 1
+
+local yearSelect = yearMap[yearSelectIndex]
+local monthSelect = monthMap[monthSelectIndex]
 sysLog('wxPunchType: '..wxPunchType)
+sysLog('yearSelect: '..yearSelect)
+sysLog('monthSelect: '..monthSelect)
 
 -- 获取 uuid
 local uuid = getDeviceUUID()
@@ -231,9 +241,10 @@ local punch = function()
 	if wxPunchType == DA_KA then
 		device(checkAppIsReady)
 	elseif wxPunchType == TONG_JI then
+		local date = yearSelect..'-'..monthSelect
 		local response_body = {}
 		local res, code, h = http.request {
-			url     = BASE_URL.."/api/wxpunch/"..uuid,
+			url     = BASE_URL.."/api/wxpunch/"..uuid.."?date="..date,
 			method  = "GET",
 			sink    = ltn12.sink.table(response_body)
 		}

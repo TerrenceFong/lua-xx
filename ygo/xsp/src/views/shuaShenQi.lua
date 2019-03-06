@@ -64,7 +64,7 @@ local function startFight(pos)
     local successTimes = 0
     local failTimes = 0
     local drawTimes = 0
-    showHUD(hud, "胜："..successTimes.."，负："..failTimes.."，平："..drawTimes.."，号："..finishAccountTimes, 12, "0xffff0000", "0xffffffff", 3, 0, 725, 300, 20)
+    showHUD(hud, "胜："..successTimes.."，负："..failTimes.."，平："..drawTimes.."，号："..finishAccountTimes, 12, "0xffff0000", "0xffffffff", 0, 0, -5, 228, 32)
 
     -- 目标胜利场次
     local targetTimes = _G.UIResults.shenqiWinTimes
@@ -97,7 +97,7 @@ local function startFight(pos)
             else
                 drawTimes = drawTimes + 1
             end
-            showHUD(hud, "胜："..successTimes.."，负："..failTimes.."，平："..drawTimes.."，号："..finishAccountTimes, 12, "0xffff0000", "0xffffffff", 3, 0, 725, 300, 20)
+            showHUD(hud, "胜："..successTimes.."，负："..failTimes.."，平："..drawTimes.."，号："..finishAccountTimes, 12, "0xffff0000", "0xffffffff", 0, 0, -5, 228, 32)
         end)
 
         mSleep(1000)
@@ -118,7 +118,7 @@ local function startFight(pos)
     
     sysLog('success finish')
     finishAccountTimes = finishAccountTimes + 1
-    showHUD(hud, "胜："..successTimes.."，负："..failTimes.."，平："..drawTimes.."，号："..finishAccountTimes, 12, "0xffff0000", "0xffffffff", 3, 0, 725, 300, 20)
+    showHUD(hud, "胜："..successTimes.."，负："..failTimes.."，平："..drawTimes.."，号："..finishAccountTimes, 12, "0xffff0000", "0xffffffff", 0, 0, -5, 228, 32)
 end
 
 -- 选择需要刷的账号

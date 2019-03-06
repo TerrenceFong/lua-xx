@@ -2,6 +2,7 @@ setSysConfig("isLogFile", "1")
 sysLog("start")
 setScreenScale(750, 1334)    --在540*960分辨率的手机中开发了脚本，要在720*1280的设备中运行 --
 init("0", 1)
+setUIOrientation(1)
 
 -- 工具库
 local bb = require('badboy')
