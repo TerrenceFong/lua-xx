@@ -6,10 +6,10 @@ local device = function(cb)
 
 	runSuccess = runApp(appName)
 	mSleep(5 * 1000)  --等待程序响应W
---	sysLog(runSuccess)
+	sysLog('runSuccess: '..runSuccess)
 
 	isRun = appIsRunning(appName) --检测应用是否在运行
-	sysLog(isRun)
+	sysLog('isRun: '..isRun)
 
 	if runSuccess == 0 or isRun == 1 then
 		appid = frontAppName()
@@ -20,6 +20,8 @@ local device = function(cb)
 			-- 执行回调操作
 			cb()
 			closeApp(appName)
+			mSleep(1500)
+			lockDevice()
 			lua_exit()
 		else
 			toast("请打开 "..appName.." 再运行该脚本！")

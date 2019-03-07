@@ -58,7 +58,7 @@ local postPunchData = function()
 	print_r(result)
 
 	if success == true then
-		dialog(message, 0)
+		dialog(message, 3)
 		mSleep(2000)
 	end
 end
@@ -300,7 +300,15 @@ local punch = function()
 			local countdown = targetTime - nowTime
 			print('倒计时：'..countdown)
 
-			setTimer(countdown * 1000, function() device(checkAppIsReady) end)
+			setTimer(countdown * 1000, function() 
+				device(
+					function()
+						sysLog('test: dialog')
+						dialog('testttt', 3)
+						mSleep(2000)
+					end
+				)
+			end)
 			mSleep(countdown * 1000)
 		end
 	end
