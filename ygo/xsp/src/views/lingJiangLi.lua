@@ -51,8 +51,6 @@ local function lingQu()
             mSleep(2500)
             tab(665, 695)
             mSleep(1000)
-            finishAccountTimes = finishAccountTimes + 1
-            showHUD(hud, "号："..finishAccountTimes, 12, "0xffff0000", "0xffffffff", 0, 0, -5, 128, 32)
         end
     end
 end
@@ -144,6 +142,9 @@ local function shuaShenQi()
                 -- 寻找奖励
                 sysLog('寻找奖励')
                 findEmail()
+                -- 领完后记录完成的账号数
+                finishAccountTimes = finishAccountTimes + 1
+                showHUD(hud, "号："..finishAccountTimes, 12, "0xffff0000", "0xffffffff", 0, 0, -5, 128, 32)
             end, true)
             mSleep(3000)
         end
