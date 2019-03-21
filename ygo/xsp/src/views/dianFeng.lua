@@ -85,6 +85,7 @@ local function restartCallBack()
         sysLog('重开后在胜负页面')
         sysLog('重置 判断重开后是否需要从今日任务页进入')
         afterRestartNeedStart = false
+        -- 可能会导致该场胜负没有被记录
         tab(475, 680)
         startDialogCheck()
         sysLog('重新进入战斗')
