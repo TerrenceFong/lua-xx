@@ -50,6 +50,15 @@
 			"color": "0,0,225"
 		},
 		{
+			"id": "isUseBottle",
+			"list": " 是否使用瓶子",
+			"select": "0",
+			"size": 25,
+			"type": "CheckBoxGroup",
+			"orientation": "horizontal",
+			"color": "0,0,225"
+		},
+		{
 			"id": "shenqiWinTimes",
 			"align": "left",
 			"color": "0,0,0",
