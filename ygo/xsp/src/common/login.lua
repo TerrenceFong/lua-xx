@@ -26,7 +26,7 @@ local function checkAnnouncement()
         local x, y = findColor(
             {268, 69, 1060, 679}, 
             "0|0|0x9298bc,-16|16|0x9296b9,-8|543|0x999ab9,728|5|0xe4ae85,727|545|0x7a7e94,154|-5|0x41444f,485|0|0x568ff9,408|-2|0x0054cb,362|1|0xffc800",
-            95, 0, 0, 0
+            85, 0, 0, 0
         )
         if x > -1 then
             tab(1015, 115)

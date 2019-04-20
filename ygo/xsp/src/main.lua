@@ -13,11 +13,13 @@ local jueDouDaTing = require('views.jueDouDaTing')
 local dianFeng = require('views.dianFeng')
 local shuaShenQi = require('views.shuaShenQi')
 local lingJiangLi = require('views.lingJiangLi')
+local sendShenQi = require('views.sendShenQi')
 
 -- 类型常量
 local DIAN_FENG = '2'
 local SHUA_SHEN_QI = '3'
 local LING_JIANG_LI = '4'
+local SEND_SHEN_QI = '5'
 
 -- ui --
 
@@ -40,6 +42,8 @@ elseif UIRet == 1 then
 		shuaShenQi()
 	elseif type == LING_JIANG_LI then
 		lingJiangLi()
+	elseif type == SEND_SHEN_QI then
+		sendShenQi()
 	else
 		jueDouDaTing()
 	end
