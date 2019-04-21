@@ -3,7 +3,7 @@ local tab = require('common.tab')
 
 
 local function clickGift()
-    mSleep(1000)
+    mSleep(500)
     sysLog('查找赠送按钮')
     local x, y = findColor(
         {624, 10, 942, 392}, 
@@ -15,7 +15,7 @@ local function clickGift()
         sysLog('点击赠送')
     end
 
-    mSleep(1000)
+    mSleep(500)
     sysLog('退出赠送按钮函数')
 end
 
@@ -42,7 +42,7 @@ local function shenQi(info, num)
     local count = 0
 
     while true do
-        mSleep(1000)
+        mSleep(500)
         sysLog('查找第一条留言')
         local x0, y0 = findColor(
             {451, 113, 821, 284}, 
@@ -69,13 +69,13 @@ local function shenQi(info, num)
             if x > -1 then
                 sysLog('库存还有')
                 tab(x, y)
-                mSleep(1000)
+                mSleep(500)
                 tab(755, 417)
                 hasSend = hasSend + 1
                 count = 0
                 sysLog('赠送成功')
             else
-                mSleep(1000)
+                mSleep(500)
                 sysLog('检查当前是否没有库存')
                 local x1, y1 = findColor(
                     area,
@@ -84,7 +84,7 @@ local function shenQi(info, num)
                 )
                 if x1 > -1 then
                     count = count + 1
-                    mSleep(1000)
+                    mSleep(500)
                     -- 手动退出赠送窗口
                     tab(1010, 123)
                     sysLog('库存为空，手动关闭赠送窗口')
@@ -103,7 +103,7 @@ local function shenQi(info, num)
             break
         end
 
-        mSleep(1000)
+        mSleep(500)
     end
 
     sysLog('退出'..title..'循环')
