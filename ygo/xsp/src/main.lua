@@ -15,6 +15,8 @@ local shuaShenQi = require('views.shuaShenQi')
 local lingJiangLi = require('views.lingJiangLi')
 local sendShenQi = require('views.sendShenQi')
 
+local timingRunTask = require('common.timingRunTask')
+
 -- 类型常量
 local DIAN_FENG = '2'
 local SHUA_SHEN_QI = '3'
@@ -35,18 +37,20 @@ elseif UIRet == 1 then
 	-- 将用户选择的值存入全局变量里 方便其他模块读取
 	base.UIResults = UIResults
 	local type = UIResults.ygoType
-	
-	if type == DIAN_FENG then
-		dianFeng()
-	elseif type == SHUA_SHEN_QI then
-		shuaShenQi()
-	elseif type == LING_JIANG_LI then
-		lingJiangLi()
-	elseif type == SEND_SHEN_QI then
-		sendShenQi()
-	else
-		jueDouDaTing()
-	end
+
+	timingRunTask(base, function()
+		if type == DIAN_FENG then
+			dianFeng()
+		elseif type == SHUA_SHEN_QI then
+			shuaShenQi()
+		elseif type == LING_JIANG_LI then
+			lingJiangLi()
+		elseif type == SEND_SHEN_QI then
+			sendShenQi()
+		else
+			jueDouDaTing()
+		end
+	end)
 end
 
 -- ui --

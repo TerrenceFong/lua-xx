@@ -141,7 +141,22 @@ local function shuaShenQi()
                 startDialogCheck()
                 -- 寻找奖励
                 sysLog('寻找奖励')
+
+                -- 领取邮件的奖励
                 findEmail()
+
+                -- 签到的奖励
+                
+                -- 任务的奖励
+
+                -- 徽章的奖励
+
+                -- 每日&赛季宝箱奖励
+
+                -- 回归奖励
+
+                -- 社团贡献
+
                 -- 领完后记录完成的账号数
                 finishAccountTimes = finishAccountTimes + 1
                 showHUD(hud, "号："..finishAccountTimes, 12, "0xffff0000", "0xffffffff", 0, 0, -5, 128, 32)

@@ -123,7 +123,7 @@ end
 
 -- 选择需要刷的账号
 local function selectAccount()
-    local rootview = RootView:create({style = ViewStyle.CUSTOME, width = 960, height = 600})
+    local rootview = RootView:create({style = ViewStyle.CUSTOME, width = 960, height = 600, countdown = 15})
     local page = Page:create("page")
     page.text = "选择账号"
     local checkboxgroup = CheckBoxGroup:create('accountGroup')
