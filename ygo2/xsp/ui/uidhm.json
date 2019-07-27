@@ -1,0 +1,58 @@
+{
+   "style" : "default",
+   "config" : "save_兑换码.dat",
+   "width" : 800,
+   "height" : 800,
+   "cancelscroll" : true,
+   "countdown" : 999,
+   "cancelname" : "取消",
+   "okname" : "确定",
+   "views" : [
+      {
+         "text" : "兑换码",
+         "type" : "Page",
+         "views" : [
+            {
+               "id" : "049",
+							"list" : "不执行直接退出,继续执行上次剩余兑换码,使用输入框兑换码",
+               "select" : "0",
+               "size" : 40,
+               "type" : "RadioGroup",
+               "orientation" : "horizontal",
+               "color" : "220,0,0"
+            },
+            {
+               "id" : "050",
+               "align" : "left",
+               "color" : "0,0,0",
+               "kbtype" : "",
+               "prompt" : "输入方式：HD35TCM 3yUh6PE ktVRBsq ",
+               "size" : 30,
+               "text" : "",
+               "type" : "Edit"
+            },
+						{
+               "type" : "Label",
+							"text" : "脚本内置兑换码，在输入框输入 dh0 里面包含100个码方便海涛,可用范围dh0-dh42，兑换码不定期更新，数字越大码越新",
+               "size" : 30,
+               "align" : "left",
+               "color" : "220,0,0"
+            },
+            {
+               "type" : "Label",
+               "text" : "PS:如出现错误情况，可选低档的运行速度，或者把输入法切换到官方的英文输入法",
+               "size" : 30,
+               "align" : "left",
+               "color" : "220,0,0"
+            },
+            {
+               "type" : "Label",
+               "text" : "使用说明:在主页面/人物面板/兑换码输入画面运行兑换码脚本，并按照兑换码排列方式粘贴至上方↑↑↑输入框，格式例如：（HD35TCM 3yUh6PE ktVRBsq ……）或者（HD35TCM,3yUh6PE,ktVRBsq,……）或者（兑换码与兑换码之间添加一个符号或空格），兑换码是7位英文大小写加数字，中途不能错误，出错后不能正常兑换",
+               "size" : 30,
+               "align" : "left",
+               "color" : "0,0,220"
+            }
+         ]
+      }
+   ]
+}

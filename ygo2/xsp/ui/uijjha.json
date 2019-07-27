@@ -1,0 +1,78 @@
+{
+   "style" : "default",
+   "config" : "save_竞技黑暗.dat",
+   "width" : 800,
+   "height" : 800,
+   "cancelscroll" : true,
+   "countdown" : 999,
+   "cancelname" : "取消",
+   "okname" : "确定",
+   "views" : [
+      {
+         "text" : "竞技/黑暗",
+         "type" : "Page",
+         "views" : [
+            {
+               "type" : "Label",
+               "text" : "说明：以下为附加选项，可不选，如果想战斗过程中接手战斗，竞技之门请在（基础设置）页面附加1-③（手动）前面选上，黑暗决斗默认手动转自动后不再自动，当前比赛战斗结束后恢复自动",
+               "size" : 30,
+               "align" : "left",
+               "color" : "0,0,220"
+            },
+            {
+               "id" : "501",
+               "type" : "CheckBoxGroup",
+               "size" : 35,
+               "list" : "1.使用金币(竞技/黑暗用)",
+               "select" : "",
+               "color" : "220,0,0"
+            },
+            {
+               "id" : "504",
+               "type" : "CheckBoxGroup",
+               "size" : 35,
+               "list" : "2.自动认输(竞技/黑暗用)",
+               "select" : "",
+               "color" : "220,0,0"
+            },
+            {
+               "type" : "Label",
+               "text" : "说明：不勾下面选项则默认自选牌跟自选人物，选完牌后脚本自动开始战斗",
+               "size" : 30,
+               "align" : "left",
+               "color" : "0,0,220"
+            },
+            {
+               "id" : "502",
+               "type" : "CheckBoxGroup",
+               "size" : 35,
+               "list" : "3.自动选牌(竞技用)",
+               "select" : "",
+               "color" : "220,0,0"
+            },
+            {
+               "type" : "Label",
+               "text" : "说明：优选攻击1600-2499，次选陷阱或魔法，最后按顺序选牌",
+               "size" : 30,
+               "align" : "left",
+               "color" : "0,0,220"
+            },
+            {
+               "type" : "Label",
+               "text" : "        （↑↑↑每次更新选牌界面会停留3秒判断，ipad因界面显示原因只挑选前4张牌）",
+               "size" : 25,
+               "align" : "left",
+               "color" : "0,0,220"
+            },
+            {
+               "id" : "503",
+               "type" : "CheckBoxGroup",
+               "size" : 35,
+               "list" : "4.自动选人物(默认选第一位)(竞技用)",
+               "select" : "",
+               "color" : "220,0,0"
+            }
+         ]
+      }
+   ]
+}

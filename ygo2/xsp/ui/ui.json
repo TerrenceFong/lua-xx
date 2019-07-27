@@ -1,0 +1,310 @@
+{
+   "style" : "default",
+   "config" : "save_ios决战之城.dat",
+   "width" : 1200,
+   "height" : 900,
+   "cancelscroll" : true,
+   "countdown" : 999,
+   "cancelname" : "取消",
+   "okname" : "确定",
+   "views" : [
+      {
+         "text" : "基本设置",
+         "type" : "Page",
+         "views" : [
+            {
+               "type" : "Label",
+               "text" : "使用说明：请把hone键置于在画面右侧，按音量键关闭脚本，运行过程中不能旋转屏幕，设置好以下选项后点击确定开始执行。",
+               "size" : 40,
+               "align" : "left",
+               "color" : "50,50,50"
+            },
+            {
+               "type" : "Label",
+               "text" : "请选择需要的模式(八选一)",
+               "size" : 28,
+               "align" : "left",
+               "color" : "220,0,0"
+            },
+            {
+               "id" : "101",
+               "list" : "1.无限战斗,2.上分模式,3.连降再战,4.连胜模式,5.单独冒险,6.竞技之门,7.黑暗决斗,8.自动兑换,9.特殊功能",
+               "select" : "0",
+               "size" : 40,
+               "type" : "RadioGroup",
+               "orientation" : "horizontal",
+               "color" : "220,0,0"
+            },
+            {
+               "type" : "Label",
+               "text" : "1-1.胜利场次(默认100场)(1-4模式必填)",
+               "size" : 28,
+               "align" : "left",
+               "color" : "220,0,0"
+            },
+            {
+               "type" : "Label",
+               "text" : "注意:任何模式都要设置胜利场次，可选择附加功能",
+               "size" : 28,
+               "align" : "left",
+               "color" : "0,0,220"
+            },
+            {
+               "id" : "103",
+               "type" : "Edit",
+               "prompt" : "",
+               "text" : "100",
+               "size" : 30,
+               "align" : "left",
+               "kbtype" : "number"
+            },
+            {
+               "type" : "Label",
+               "text" : "2-1.上分分数(默认1400分)(1-4模式必填，无限、连降或连胜需勾上~附加2-❷)",
+               "size" : 28,
+               "align" : "left",
+               "color" : "220,0,0"
+            },
+            {
+               "id" : "105",
+               "type" : "Edit",
+               "prompt" : "",
+               "text" : "1400",
+               "size" : 30,
+               "align" : "left",
+               "kbtype" : "number"
+            }
+         ]
+      },
+      {
+         "text" : "附加设置",
+         "type" : "Page",
+         "views" : [
+            {
+               "type" : "Label",
+               "text" : "附加模式1，需要的请点√",
+               "size" : 28,
+               "align" : "left",
+               "color" : "0,0,0"
+            },
+            {
+               "id" : "079",
+               "type" : "CheckBoxGroup",
+               "size" : 40,
+               "list" : "①：退出脚本显示胜负经验时间连胜等统计数据",
+               "select" : "",
+               "color" : "220,0,0"
+            },
+            {
+               "id" : "080",
+               "type" : "CheckBoxGroup",
+               "size" : 40,
+               "list" : "②：完成任务后锁屏(仅越狱)",
+               "select" : "",
+               "color" : "220,0,0"
+            },
+            {
+               "id" : "098",
+               "type" : "CheckBoxGroup",
+               "size" : 40,
+               "list" : "③：手动(战斗中可转手动，下一局恢复自动)",
+               "select" : "",
+               "color" : "220,0,0"
+            },
+            {
+               "id" : "100",
+               "type" : "CheckBoxGroup",
+               "size" : 40,
+               "list" : "④：0点挂机(0点运行，会延迟1分钟)",
+               "select" : "",
+               "color" : "220,0,0"
+            },
+            {
+               "type" : "Label",
+               "text" : "附加模式2，需要的请点√",
+               "size" : 28,
+               "align" : "left",
+               "color" : "0,0,0"
+            },
+            {
+               "id" : "099",
+               "type" : "CheckBoxGroup",
+               "size" : 40,
+               "list" : "❶：领奖(完成胜场后领取每日和连胜奖励)",
+               "select" : "",
+               "color" : "220,0,0"
+            },
+            {
+               "id" : "082",
+               "type" : "CheckBoxGroup",
+               "size" : 40,
+               "list" : "❷：接❶↑↑↑或完成胜场后直接跳转上分模式",
+               "select" : "",
+               "color" : "220,0,0"
+            },
+            {
+               "type" : "Label",
+               "text" : "           （↑↑↑无限、连降跟连胜模式用，需设置分数）",
+               "size" : 25,
+               "align" : "left",
+               "color" : "0,0,220"
+            },
+            {
+               "id" : "081",
+               "type" : "CheckBoxGroup",
+               "size" : 40,
+               "list" : "❸：接❶或❷↑↑↑或完成胜场后打冒险(负4次结束)",
+               "select" : "",
+               "color" : "220,0,0"
+            },
+            {
+               "id" : "102",
+               "type" : "CheckBoxGroup",
+               "size" : 40,
+               "list" : "❹：战斗过程中领取在线奖励(0点自动清零)",
+               "select" : "",
+               "color" : "220,0,0"
+            },
+            {
+               "type" : "Label",
+               "text" : "打√后,选择需要领奖的次数(默认5次)(计算方式以15场正常战斗为一个循环)",
+               "size" : 28,
+               "align" : "left",
+               "color" : "220,0,0"
+            },
+            {
+               "id" : "104",
+               "list" : "0次,1次,2次,3次,4次,5次",
+               "select" : "5",
+               "size" : 30,
+               "type" : "RadioGroup",
+               "orientation" : "horizontal",
+               "color" : "220,0,0"
+            }
+         ]
+      },
+      {
+         "text" : "其他",
+         "type" : "Page",
+         "views" : [
+            {
+               "type" : "Label",
+               "text" : "脚本运行速度",
+               "size" : 40,
+               "align" : "left",
+               "color" : "220,0,0"
+            },
+            {
+               "id" : "123",
+               "list" : "1200ms慢速,800ms常速,600ms中速,400ms快速",
+               "select" : "3",
+               "size" : 40,
+               "type" : "RadioGroup",
+               "color" : "220,0,0"
+            },
+            {
+               "type" : "Label",
+               "text" : "-----------------------------------------------------------",
+               "size" : 30,
+               "align" : "left",
+               "color" : "50,50,50"
+            },
+            {
+               "id" : "160",
+               "list" : "低于设定电量~~振动~~提示",
+               "select" : "",
+               "size" : 40,
+               "type" : "CheckBoxGroup",
+               "color" : "220,0,0"
+            },
+            {
+               "id" : "161",
+               "list" : "低于设定电量结束脚本并锁屏（锁屏仅越狱）",
+               "select" : "",
+               "size" : 40,
+               "type" : "CheckBoxGroup",
+               "orientation" : "horizontal",
+               "color" : "220,0,0"
+            },
+            {
+               "id" : "162",
+               "list" : "20%,30%,40%",
+               "select" : "0",
+               "size" : 40,
+               "type" : "RadioGroup",
+               "orientation" : "horizontal",
+               "color" : "220,0,0"
+            },
+            {
+               "type" : "Label",
+               "text" : "-----------------------------------------------------------",
+               "size" : 30,
+               "align" : "left",
+               "color" : "50,50,50"
+            },
+            {
+               "id" : "236",
+               "type" : "CheckBoxGroup",
+               "size" : 30,
+               "list" : "闪退重进游戏（限越狱用户，客户端必须是叉叉助手下载的决斗之城ol）",
+               "select" : "",
+               "color" : "0,0,0"
+            },
+            {
+               "id" : "000",
+               "type" : "CheckBoxGroup",
+               "size" : 30,
+               "list" : "点测试(不要选)",
+               "select" : "",
+               "color" : "0,0,0"
+            },
+            {
+               "type" : "Label",
+               "text" : "特殊功能选项",
+               "size" : 30,
+               "align" : "left",
+               "color" : "220,0,0"
+            },
+            {
+               "id" : "010",
+               "list" : "无,plus赠神器,plus领神器,ipad赠神器,ipad领神器,ipad瓶子模式,ipad小号刷神器,7赠神器,7领神器",
+               "select" : "0",
+               "size" : 40,
+               "type" : "RadioGroup",
+               "orientation" : "horizontal",
+               "color" : "220,0,0"
+            },
+            {
+               "id" : "10001",
+               "type" : "Edit",
+               "prompt" : "",
+               "text" : "",
+               "size" : 30,
+               "align" : "left",
+               "kbtype" : "number"
+            },
+            {
+               "id" : "10002",
+               "type" : "Edit",
+               "prompt" : "",
+               "text" : "",
+               "size" : 30,
+               "align" : "left",
+               "kbtype" : "number"
+            }
+				
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+         ]
+      }
+   ]
+}
