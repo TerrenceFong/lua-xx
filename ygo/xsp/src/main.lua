@@ -6,6 +6,8 @@ setUIOrientation(1)
 
 -- 工具库
 local bb = require('badboy')
+local json = bb.getJSON()
+bb.loaduilib()
 -- 打印 table
 local print_r = require('utils/printTable')
 local base = _G
@@ -22,6 +24,24 @@ local DIAN_FENG = '2'
 local SHUA_SHEN_QI = '3'
 local LING_JIANG_LI = '4'
 local SEND_SHEN_QI = '5'
+
+-- 这块代码的作用是：
+-- 添加脚本的密码验证，通过才可以正常运行
+-- 应该用 ui.json 来实现这一段，这样可以记录输入值
+-- local rootview = RootView:create({style = ViewStyle.CUSTOME, width = 660, height = 200})
+-- local pwdEdit = Edit:create("pwd", {color = "0, 0, 0", size = 20, prompt = "请输入密码"})
+-- pwdEdit.align = TextAlign.LEFT
+-- rootview:addView(pwdEdit)
+-- local uijson = json.encode(rootview)
+-- local UIRet1, UIResults1 = showUI(uijson)
+-- if UIRet1 == 0 then
+-- 	lua_exit()
+-- elseif UIRet1 == 1 then
+-- 	local pwd = UIResults1.pwd
+-- 	if pwd ~= '0601' then
+-- 		lua_exit()
+-- 	end
+-- end
 
 -- ui --
 
