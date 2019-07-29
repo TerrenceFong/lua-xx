@@ -357,6 +357,7 @@ json_string_literal	D:/用户目录/我的文档/xspworkspace/ygo2/xsp/src\JSON.lua	711;
 ket	D:/用户目录/我的文档/xspworkspace/ygo2/xsp/src\fun集.lua	181;"	e
 key_indent	D:/用户目录/我的文档/xspworkspace/ygo2/xsp/src\JSON.lua	906;"	e
 kt	D:/用户目录/我的文档/xspworkspace/ygo2/xsp/src\main.lua	56;"	e
+lingQu	D:/用户目录/我的文档/xspworkspace/ygo2/xsp/src\神器7.lua	69;"	f
 lo_surrogate	D:/用户目录/我的文档/xspworkspace/ygo2/xsp/src\JSON.lua	482;"	e
 lowpart	D:/用户目录/我的文档/xspworkspace/ygo2/xsp/src\JSON.lua	316;"	e
 lowpart	D:/用户目录/我的文档/xspworkspace/ygo2/xsp/src\JSON.lua	327;"	e
@@ -416,6 +417,7 @@ onDecodeError(message,	D:/用户目录/我的文档/xspworkspace/ygo2/xsp/src\JSON.lua	3
 onDecodeError(message,	D:/用户目录/我的文档/xspworkspace/ygo2/xsp/src\JSON.lua	87;"	f
 onEncodeError(message,	D:/用户目录/我的文档/xspworkspace/ygo2/xsp/src\JSON.lua	390;"	f
 options	D:/用户目录/我的文档/xspworkspace/ygo2/xsp/src\JSON.lua	859;"	e
+point	D:/用户目录/我的文档/xspworkspace/ygo2/xsp/src\神器7.lua	72;"	e
 psm	D:/用户目录/我的文档/xspworkspace/ygo2/xsp/src\Q连胜模式4s.lua	145;"	e
 psm	D:/用户目录/我的文档/xspworkspace/ygo2/xsp/src\Q连胜模式4s.lua	27;"	e
 psm	D:/用户目录/我的文档/xspworkspace/ygo2/xsp/src\Q连胜模式4s.lua	85;"	e
@@ -550,7 +552,7 @@ string_key	D:/用户目录/我的文档/xspworkspace/ygo2/xsp/src\JSON.lua	787;"	e
 string_keys	D:/用户目录/我的文档/xspworkspace/ygo2/xsp/src\JSON.lua	724;"	e
 subtable_indent	D:/用户目录/我的文档/xspworkspace/ygo2/xsp/src\JSON.lua	907;"	e
 t	D:/用户目录/我的文档/xspworkspace/ygo2/xsp/src\main.lua	250;"	e
-t	D:/用户目录/我的文档/xspworkspace/ygo2/xsp/src\main.lua	283;"	e
+t	D:/用户目录/我的文档/xspworkspace/ygo2/xsp/src\main.lua	294;"	e
 text_len	D:/用户目录/我的文档/xspworkspace/ygo2/xsp/src\JSON.lua	447;"	e
 text_len	D:/用户目录/我的文档/xspworkspace/ygo2/xsp/src\JSON.lua	528;"	e
 text_len	D:/用户目录/我的文档/xspworkspace/ygo2/xsp/src\JSON.lua	578;"	e

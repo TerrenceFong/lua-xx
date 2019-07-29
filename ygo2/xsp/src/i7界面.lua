@@ -582,18 +582,18 @@ end
 end
 
 function 防闪退7()
-if 闪退==1 then
-flag = appIsRunning("com.gamest.fight.city.ol"); 
-if flag == 0 then --如果没有运行
-闪退次数=闪退次数+1
-	runApp("com.gamest.fight.city.ol") --运行QQ
-mSleep(15000)
-点击(660,530)
-mSleep(15000)
-点击(1300,340)
-mSleep(10000)
-点击(660,660)
-mSleep(1000)
-end
-end
+	if 闪退==1 then
+		flag = appIsRunning("com.demea.conur"); 
+		if flag == 0 then --如果没有运行
+			闪退次数=闪退次数+1
+			runApp("com.demea.conur") --运行QQ
+			mSleep(15000)
+			点击(660,530)
+			mSleep(15000)
+			点击(1016,121)
+			mSleep(10000)
+			点击(660,660)
+			mSleep(1000)
+		end
+	end
 end

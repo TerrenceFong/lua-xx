@@ -35,32 +35,61 @@ end
 end
 
 function 领神器7()
+setScreenScale(750,1334)
 width,height = getScreenSize()
 sysLog(width)
 sysLog(height)
 showHUD(胜负,"运行中",20,"0xffff0000","0xffffffff",0,150,0,100,20)
+
+-- while true do
+--     while true do
+--         mSleep(500)
+
+--         领奖成功7x,领奖成功7y= findColor({374, 229, 760, 737}, "0|0|0xfefefe,78|2|0xffffff,168|4|0xffffff,236|2|0xffffff,80|389|0xffb322,182|397|0xd18901,78|413|0x855400,125|400|0x573800", 95, 0, 0, 0)
+--         if 领奖成功7x> -1  then
+--             点击(665,690)
+--             break
+--         end
+
+--         领取7x,领取7y = 找颜色(0x87ac52,"12|33|0x555a49,40|46|0x4d533e,66|49|0x949685,93|49|0x4f8105", 95, 1584, 160, 1897, 1507)
+
+--         已领取7x,已领取7y = 找颜色(0xc8fa96,"30|22|0xc0ef96,55|14|0x89a69a,91|15|0x9cbe98", 95, 1584, 160, 1897, 1507)
+
+--         if 领取7x> -1  then
+--             点击(领取7x,领取7y)
+--         end
+
+--         if 已领取7x> -1  then
+--             选取(1717,1267,5,-90)
+--             mSleep(1000)
+--         end
+--     end
+-- end
+
+local function lingQu()
+    sysLog('获取可领取的个数')
+    mSleep(1000)
+    local point = findColors(
+        {862, 122, 1119, 660}, 
+        "0|0|0xa7a897,0|-21|0xc6f28d,1|-17|0xb5ea7b,3|-9|0x202d0e,13|-1|0xfffaf0,16|6|0xdddbce,17|10|0x1a2a02,-31|10|0x528506,-51|-17|0xb7ea74",
+        90, 0, 0, 0
+    )
+    if #point ~= 0 then
+        sysLog('当前可领取的个数为：'..#point)
+        for var = 1, #point do
+            点击(point[var].x, point[var].y)
+            mSleep(500)
+            点击(665, 660)
+            mSleep(500)
+        end
+    end
+end
+
 while true do
-
-while true do
-mSleep(500)
-
-领奖成功7x,领奖成功7y= 找颜色(0xf5e699,"268|4|0xfcf5bd,517|3|0xf1e296,-22|67|0x131108,301|112|0xffffff,123|888|0xffbe43,356|946|0x865500", 95, 691, 441, 1363, 1503)
-if 领奖成功7x> -1  then
-点击(1000,1420)
-break
+    lingQu()
+    sysLog('开始滑动')
+    选取(858,633,2,-40)
+    mSleep(1000)
 end
 
-领取7x,领取7y= 找颜色(0x87ac52,"12|33|0x555a49,40|46|0x4d533e,66|49|0x949685,93|49|0x4f8105", 95, 1584, 160, 1897, 1507)
-已领取7x,已领取7y= 找颜色(0xc8fa96,"30|22|0xc0ef96,55|14|0x89a69a,91|15|0x9cbe98", 95, 1584, 160, 1897, 1507)
-if 领取7x> -1  then
-点击(领取7x,领取7y)
-end
-
-if 已领取7x> -1  then
-选取(1717,1267,5,-90)
-mSleep(1000)
-end
-
-end
-end
 end

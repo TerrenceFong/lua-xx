@@ -76,9 +76,9 @@ function 领神器5s()
 width,height = getScreenSize()
 if (width==1242 and height==2208) then
   setScreenScale(640,1136)
-	else
+else
 	lua_exit()
-	end
+end
 
 showHUD(胜负,"运行中",20,"0xffff0000","0xffffffff",0,150,0,100,20)
 dialog("请打开(邮件-赠送)界面，再运行脚本，否则会出错", 0)
