@@ -16,6 +16,7 @@ local dianFeng = require('views.dianFeng')
 local shuaShenQi = require('views.shuaShenQi')
 local lingJiangLi = require('views.lingJiangLi')
 local sendShenQi = require('views.sendShenQi')
+local shenQi = require('views.shenQi')
 
 local timingRunTask = require('common.timingRunTask')
 
@@ -24,6 +25,7 @@ local DIAN_FENG = '2'
 local SHUA_SHEN_QI = '3'
 local LING_JIANG_LI = '4'
 local SEND_SHEN_QI = '5'
+local SMS_SEND_SHEN_QI = '6'
 
 -- 这块代码的作用是：
 -- 添加脚本的密码验证，通过才可以正常运行
@@ -67,6 +69,8 @@ elseif UIRet == 1 then
 			lingJiangLi()
 		elseif type == SEND_SHEN_QI then
 			sendShenQi()
+		elseif type == SMS_SEND_SHEN_QI then
+			shenQi()
 		else
 			jueDouDaTing()
 		end

@@ -1,4 +1,5 @@
 function 赠神器7()
+setScreenScale(750,1334)
 showHUD(胜负,"运行中",20,"0xffff0000","0xffffffff",0,150,0,100,20)
 while true do
 mSleep(900)
