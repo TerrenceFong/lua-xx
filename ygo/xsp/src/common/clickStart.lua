@@ -4,9 +4,9 @@ local tab = require('common.tab')
 local function clickStart()
     sysLog('寻找开始点击按钮')
     mSleep(1500)
-    local x, y = findColor(
-        {694, 539, 879, 606}, 
-        "702|542|0xfdba51,752|544|0xfeeabf,737|558|0xffbf48,737|574|0x996300,732|587|0x855400,731|599|0xd58b10,732|604|0xe69c2d,803|577|0xffff00,873|600|0xd0860b",
+    local x, y = findColors(
+        {735, 530, 899, 613}, 
+        "0|0|0xfec048,-1|28|0x845400,107|-6|0xffcb64,102|40|0xbe7600,40|17|0x413800,63|18|0xd2cf00,77|25|0x352100,51|-4|0xfec85c,52|31|0x895600",
         95, 0, 0, 0
     )
     if x > -1 then
