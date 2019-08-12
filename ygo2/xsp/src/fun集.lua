@@ -342,6 +342,13 @@ else
   竞技认输=1
 end
 
+if UIJJHA["505"]=="" or UIJJHA["505"]==nil then
+  dialog("你没设置胜利场数，默认10场", 3)
+  设置胜场jjha=10
+else
+  设置胜场jjha=getNumberConfig("UI胜场jjha",tonumber(UIJJHA["505"]))   --创建一个名字以UI胜场为定义名称字符串，数值为 UI窗口103里面的数值 结果就是数值
+end
+
 end
 
 function 兑()

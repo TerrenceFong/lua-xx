@@ -71,6 +71,15 @@
                "list" : "4.自动选人物(默认选第一位)(竞技用)",
                "select" : "",
                "color" : "220,0,0"
+            },
+            {
+               "id" : "505",
+               "type" : "Edit",
+               "prompt" : "",
+               "text" : "10",
+               "size" : 30,
+               "align" : "left",
+               "kbtype" : "number"
             }
          ]
       }
