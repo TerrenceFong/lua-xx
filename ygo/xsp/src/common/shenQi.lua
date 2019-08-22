@@ -45,8 +45,8 @@ local function shenQi(info, num)
         mSleep(500)
         sysLog('查找第一条留言')
         local x0, y0 = findColor(
-            {451, 113, 821, 284}, 
-            "0|0|0x10152b,-170|-30|0xc2c5d1,-135|-9|0xffffff,-114|-9|0xfefefe,-90|-6|0xffffff,-68|-9|0xffffff,-44|-8|0xffffff,59|-8|0x404042,-169|48|0x6c6f79",
+            {451, 119, 1124, 280}, 
+            "0|0|0x98aec2,-336|-83|0xe1e6ec,-334|23|0x869eb6,-112|27|0x839bb3,65|14|0x8ea4bb,100|-14|0xa3b6c7,177|-49|0xcbd5df,270|-75|0xdbe2ea",
             95, 0, 0, 0
         )
 
