@@ -1,4 +1,4 @@
-function 冒险模式7()  
+function 冒险模式7(自动结束)  
 
 function  经验m()
 if 显示结果==1 then
@@ -69,9 +69,13 @@ while true do
 mSleep(ttt)
 
 if 输了次数~=nil and 输了次数~="" and  输了次数>=4 then  
-mSleep(100)
-结束()
-lua_exit();
+  mSleep(100)
+  if 自动结束~=1 then
+    结束()
+    lua_exit();
+  else
+    break
+  end
 end	
 
 if 主界面7x> -1 then
@@ -80,10 +84,10 @@ elseif 决斗场7x> -1 then
 点击(80, 30)
 end
 if 冒险7x> -1 then
-mSleep(2*ttt)	
-l7x, l7y = 找颜色(0xbff0fb,"8|0|0xbcecfb,3|3|0xd3f5fd,11|4|0xbde9f7", 95, 3, 58, 1329, 745) 
-z7x, z7y = 找颜色(0xc8aefa,"9|0|0xa984f3,0|5|0xded0fb,9|6|0xc0a4f3", 95, 3, 58, 1329, 745) 
-h7x, h7y = 找颜色(0xfdf1bc,"11|1|0xf7e89c,2|4|0xfdf3d4,10|4|0xf6ecaf", 95, 3, 58, 1329, 745)
+  mSleep(2*ttt)	
+  l7x, l7y = 找颜色(0xbff0fb,"8|0|0xbcecfb,3|3|0xd3f5fd,11|4|0xbde9f7", 95, 3, 58, 1329, 745) 
+  z7x, z7y = 找颜色(0xc8aefa,"9|0|0xa984f3,0|5|0xded0fb,9|6|0xc0a4f3", 95, 3, 58, 1329, 745) 
+  h7x, h7y = 找颜色(0xfdf1bc,"11|1|0xf7e89c,2|4|0xfdf3d4,10|4|0xf6ecaf", 95, 3, 58, 1329, 745)
 if 	l7x > -1 then
   touchDown(1, l7x, l7y-130)
   mSleep(50)
@@ -103,8 +107,12 @@ elseif h7x > -1 then
   mSleep(ttt)
   挑战7()
 else
-结束()
-lua_exit();
+  if 自动结束~=1 then
+    结束()
+    lua_exit();
+  else
+    break
+  end
 end
 end
 

@@ -120,6 +120,14 @@
                "color" : "220,0,0"
             },
             {
+               "id": "100001",
+               "type": "CheckBoxGroup",
+               "size": 40,
+               "list": "⑤：自动挂小号",
+               "select": "",
+               "color": "220,0,0"
+            },
+            {
                "type" : "Label",
                "text" : "附加模式2，需要的请点√",
                "size" : 28,
