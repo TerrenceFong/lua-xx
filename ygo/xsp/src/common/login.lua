@@ -52,11 +52,21 @@ local function login(cb)
         sysLog('检测登录页面中')
 
         keepScreen(true)
-        local x, y = findColor(
-            {389, 174, 942, 570}, 
-            "0|0|0xffffff,-2|130|0xffffff,1|314|0x00cc66,505|308|0x00cc66,492|147|0xc8cac8,483|147|0xffffff,254|335|0x00cc66,-21|-19|0x353636",
-            95, 0, 0, 1
-        )
+        local isDouYin = _G.UIResults.isDouYin
+        local x, y = -1, -1
+        if isDouYin == '0' then
+            x, y = findColor(
+                {369, 169, 952, 636}, 
+                "0|0|0xff3a00,97|-345|0xfe3b00,153|-340|0xfe3c02,499|-185|0xfbfcfd,493|23|0xff6300,270|34|0xffe2d6,38|-74|0x3c3c3c",
+                95, 0, 0, 0
+            )
+        else
+            x, y = findColor(
+                {389, 174, 942, 570}, 
+                "0|0|0xffffff,-2|130|0xffffff,1|314|0x00cc66,505|308|0x00cc66,492|147|0xc8cac8,483|147|0xffffff,254|335|0x00cc66,-21|-19|0x353636",
+                95, 0, 0, 1
+            )
+        end
         keepScreen(false)
 
         if x > -1 then
@@ -67,7 +77,7 @@ local function login(cb)
             end
             mSleep(1500)
             sysLog('准备点击登录')
-            tab(670, 522)
+            tab(670, 550)
             checkAnnouncement()
             comfirm()
             break

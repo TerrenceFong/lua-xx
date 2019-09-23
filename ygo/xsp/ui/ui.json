@@ -59,6 +59,15 @@
 			"color": "0,0,225"
 		},
 		{
+			"id": "isDouYin",
+			"list": " 是否抖音版",
+			"select": "0",
+			"size": 25,
+			"type": "CheckBoxGroup",
+			"orientation": "horizontal",
+			"color": "0,0,225"
+		},
+		{
 			"id": "isTimingRunTask",
 			"list": " 是否12点执行任务",
 			"select": "0",

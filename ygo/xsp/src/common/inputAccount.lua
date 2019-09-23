@@ -77,15 +77,32 @@ end
 -- 账号输入
 local function inputAccount(account)
     -- 账号输入
-	findAccount()
-    mSleep(2500)
-    focusAccount()
-    mSleep(2500)
-    sysLog('填入账号到输入框')
-    inputText(account)
-    mSleep(2500)
-    blurAccount()
-    -- 密码输入
+    local isDouYin = _G.UIResults.isDouYin
+    if isDouYin == '0' then
+        -- 聚焦
+        mSleep(1500)
+        tab(720, 345)
+        mSleep(2500)
+        
+        -- 清空
+        sysLog('清空输入框')
+        inputText("#CLEAR#") --删除输入框中的文字（假设输入框中已存在文字）
+        mSleep(2500)
+
+        sysLog('填入账号到输入框')
+        inputText(account)
+        mSleep(2500)
+        -- blurAccount()
+    else
+        findAccount()
+        mSleep(2500)
+        focusAccount()
+        mSleep(2500)
+        sysLog('填入账号到输入框')
+        inputText(account)
+        mSleep(2500)
+        blurAccount()
+    end
 end
 
 return inputAccount

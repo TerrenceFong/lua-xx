@@ -6,6 +6,7 @@ local device = require('device')
 
 -- 账号
 local accountList = require('utils/accountList')
+local accountListDY = require('utils/accountListDY')
 
 local autoFight = require('common.autoFight')
 local tab = require('common.tab')
@@ -127,6 +128,12 @@ local function selectAccount()
     local page = Page:create("page")
     page.text = "选择账号"
     local checkboxgroup = CheckBoxGroup:create('accountGroup')
+    
+    local isDouYin = _G.UIResults.isDouYin
+	if isDouYin == '0' then
+		sysLog('抖音版')
+		accountList = accountListDY
+	end
     checkboxgroup:setList(unpack(accountList))
 
     local selectIndex = {}
@@ -147,6 +154,12 @@ local function shuaShenQi()
     -- local OCR = require("baiduOCR.百度云OCR")
     -- local text = OCR.文字范围(524,81,723,130)
     -- sysLog(text)
+    
+    local isDouYin = _G.UIResults.isDouYin
+	if isDouYin == '0' then
+		sysLog('抖音版')
+		accountList = accountListDY
+	end
 
     local accountHUD  = createHUD()
 

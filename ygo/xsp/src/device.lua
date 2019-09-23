@@ -4,6 +4,11 @@ local print_r = require('utils/printTable')
 local device = function(cb, isClose)
 	isClose = isClose or false
 	local appName = "com.demea.conur"
+	local isDouYin = _G.UIResults.isDouYin
+	if isDouYin == '0' then
+		sysLog('抖音版')
+		appName = "com.leocool.yugioh.ay"
+	end
 
 	local runSuccess = runApp(appName)
 	mSleep(5 * 1000)  --等待程序响应W

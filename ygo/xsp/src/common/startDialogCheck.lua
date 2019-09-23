@@ -20,6 +20,7 @@ local function todayTask()
 
         if todayTaskCount >= 10 then
             sysLog('今日任务校验退出')
+            tab(680, 100)
             break
         else
             todayTaskCount = todayTaskCount + 1
