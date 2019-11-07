@@ -59,9 +59,14 @@ local function findAccount()
     while true do
         sysLog('寻找输入账号的框')
 
+        -- local x, y = findColor(
+        --     {348, 181, 986, 269}, 
+        --     "0|0|0x352d68,29|93|0x333338,25|235|0x383939,67|241|0xffffff,566|242|0xffffff,596|152|0x323131,589|70|0x352f30,593|7|0x221821",
+        --     95, 0, 0, 0
+        -- )
         local x, y = findColor(
-            {348, 0, 986, 269}, 
-            "0|0|0x352d68,29|93|0x333338,25|235|0x383939,67|241|0xffffff,566|242|0xffffff,596|152|0x323131,589|70|0x352f30,593|7|0x221821",
+            {392, 180, 941, 274}, 
+            "0|0|0xffffff,-6|50|0xffffff,447|-9|0xffffff,438|43|0xffffff,506|47|0xffffff",
             95, 0, 0, 0
         )
         if x > -1 then
@@ -101,7 +106,9 @@ local function inputAccount(account)
         sysLog('填入账号到输入框')
         inputText(account)
         mSleep(2500)
-        blurAccount()
+        -- blurAccount()
+        sysLog('取消焦点')
+        tab(300, 145)
     end
 end
 
