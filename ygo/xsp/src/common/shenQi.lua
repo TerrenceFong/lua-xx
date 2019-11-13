@@ -63,7 +63,7 @@ local function shenQi(info, num)
             local x, y = findColor(
                 area,
                 has,
-                95, 0, 0, 0
+                80, 0, 0, 0
             )
 
             if x > -1 then
@@ -80,7 +80,7 @@ local function shenQi(info, num)
                 local x1, y1 = findColor(
                     area,
                     noHas,
-                    95, 0, 0, 0
+                    80, 0, 0, 0
                 )
                 if x1 > -1 then
                     count = count + 1
