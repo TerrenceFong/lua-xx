@@ -101,6 +101,9 @@ end
 if 主界面7x> -1 then
   点击2(1010, 370)
 elseif 决斗场7x> -1 and 可手动==1  then
+  if 吃瓶子==1 then
+    使用瓶子()
+  end
   点击(780, 570)
   mSleep(2*ttt)
   for xx=1,60,1 do
@@ -112,6 +115,9 @@ elseif 决斗场7x> -1 and 可手动==1  then
     end
   end	
 elseif 决斗场7x> -1 and 可手动==0  then
+  if 吃瓶子==1 then
+    使用瓶子()
+  end
   点击(780, 570)
 elseif 手动中7x> -1 and 可手动==0  then
   点击(40, 180)
