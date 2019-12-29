@@ -463,7 +463,11 @@ elseif (width==750 and height==1334) then
       兑()
       require("dhm")
       require("jhm7")
-      激活码7()				
+      激活码7()	
+    elseif UI["101"]== "9" then
+      竞技黑暗UI参数()
+      require("Y决斗都市7")
+      决斗都市7()			
     end
   end
 elseif (width==768 and height==1024) or (width==1536 and height==2048) or (width==2048 and height==2732) or (width==1668 and height==2224) then
