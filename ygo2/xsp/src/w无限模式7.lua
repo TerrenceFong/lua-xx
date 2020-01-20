@@ -64,6 +64,8 @@ end
 
 while true do
 
+-- 59分54秒～59秒之间会一直执行点击抢红包
+-- 每次循环都会去判断，可能会有性能问题
 --hb = getNetTime()
 --hb2=hb%1800
 --if  hb2>1794 and hb2<1800 then
