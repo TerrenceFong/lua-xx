@@ -418,10 +418,12 @@ elseif (width==640 and height==960) then
 elseif (width==750 and height==1334) then
   setScreenScale(750,1334)
   require("i7界面")
-  if 显示结果==1 then 
-    showHUD(胜负,"胜 "..胜.."场 ".."负 "..负.." 场 ".."平 "..平.."场 "..经验值.."经验",20,"0xffff0000","0xffffffff",0,100,0,400,20)
-  else
-    showHUD(胜负,"胜 "..胜.."场 ".."负 "..负.." 场 ".."平 "..平.."场",20,"0xffff0000","0xffffffff",0,150,0,300,20)	
+  if UI["101"]~= "10" then
+    if 显示结果==1 then 
+      showHUD(胜负,"胜 "..胜.."场 ".."负 "..负.." 场 ".."平 "..平.."场 "..经验值.."经验",20,"0xffff0000","0xffffffff",0,100,0,400,20)
+    else
+      showHUD(胜负,"胜 "..胜.."场 ".."负 "..负.." 场 ".."平 "..平.."场",20,"0xffff0000","0xffffffff",0,150,0,300,20)	
+    end	
   end	
   if UI["101"]~="" then 
     if UI["101"]== "0" then
@@ -467,7 +469,18 @@ elseif (width==750 and height==1334) then
     elseif UI["101"]== "9" then
       竞技黑暗UI参数()
       require("Y决斗都市7")
-      决斗都市7()			
+      决斗都市7()
+    elseif UI["101"]== "10" then
+      红h = createHUD()
+      showHUD(红h,"抢红包中",20,"0xffff0000","0xffffffff",0,150,0,150,20)
+      setScreenScale(640,1136)
+      hbxx=620
+      hbyy=300
+      for hongbao=1,10000,1 do
+        sysLog(hongbao)
+        红包(hbxx,hbyy)
+      end
+      lua_exit()
     end
   end
 elseif (width==768 and height==1024) or (width==1536 and height==2048) or (width==2048 and height==2732) or (width==1668 and height==2224) then
