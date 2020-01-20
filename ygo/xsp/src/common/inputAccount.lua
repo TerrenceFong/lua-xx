@@ -38,7 +38,7 @@ local function focusAccount()
         local x, y = findColor(
             {326, 4, 1014, 273}, 
             "0|0|0x231d48,67|3|0x313134,291|9|0x38353b,294|34|0x3a363e,570|7|0x313032,637|5|0x16100f,52|130|0xffffff,569|129|0xffffff",
-            95, 0, 0, 0
+            85, 0, 0, 0
         )
         if x > -1 then
             mSleep(1000)
