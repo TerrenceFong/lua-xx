@@ -35,6 +35,7 @@ local function checkAnnouncement()
 
         if announcementCount >= 10 then
             sysLog('公告校验退出')
+            tab(1015, 115)
             break
         else
             announcementCount = announcementCount + 1
