@@ -69,17 +69,17 @@ end
 local function findEmail()
     sysLog('寻找邮件入口')
     mSleep(2000)
-    local x, y = findColor(
-        {622, 53, 1331, 167}, 
-        "0|0|0xab9fa0,17|-6|0xefe9e9,15|12|0xfefdfd,3|12|0x14b7fa,18|19|0x36e5fe,32|14|0x3caefc,18|68|0x19354d,33|70|0xfceaaa,50|30|0x3c4654",
-        95, 0, 0, 0
-    )
-    if x > -1 then
-        sysLog('找到邮件入口')
+    -- local x, y = findColor(
+    --     {622, 53, 1331, 167}, 
+    --     "0|0|0xab9fa0,17|-6|0xefe9e9,15|12|0xfefdfd,3|12|0x14b7fa,18|19|0x36e5fe,32|14|0x3caefc,18|68|0x19354d,33|70|0xfceaaa,50|30|0x3c4654",
+    --     95, 0, 0, 0
+    -- )
+    -- if x > -1 then
+    --     sysLog('找到邮件入口')
         mSleep(1000)
         tab(1195, 105)
         findJiangLi()
-    end
+    -- end
 end
 
 -- 选择需要刷的账号
