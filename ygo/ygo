@@ -355,7 +355,7 @@ alphabet	/Users/fffffbw/Documents/xspworkspace/ygo/xsp/src/bblibs/StrUtilsAPI.lu
 andOp(left,	/Users/fffffbw/Documents/xspworkspace/ygo/xsp/src/baiduOCR/MathBit.lua	33;"	f
 angleBetween(t)	/Users/fffffbw/Documents/xspworkspace/ygo/xsp/src/bblibs/pos.lua	85;"	f
 announcementCount	/Users/fffffbw/Documents/xspworkspace/ygo/xsp/src/common/login.lua	23;"	e
-announcementCount	/Users/fffffbw/Documents/xspworkspace/ygo/xsp/src/common/login.lua	40;"	e
+announcementCount	/Users/fffffbw/Documents/xspworkspace/ygo/xsp/src/common/login.lua	41;"	e
 appName	/Users/fffffbw/Documents/xspworkspace/ygo/xsp/src/device.lua	10;"	e
 appName	/Users/fffffbw/Documents/xspworkspace/ygo/xsp/src/device.lua	6;"	e
 appid	/Users/fffffbw/Documents/xspworkspace/ygo/xsp/src/device.lua	21;"	e
@@ -778,7 +778,7 @@ findEntrance	/Users/fffffbw/Documents/xspworkspace/ygo/xsp/src/views/lingJiangLi
 findEntrance	/Users/fffffbw/Documents/xspworkspace/ygo/xsp/src/views/sendShenQi.lua	19;"	e
 findEntrance	/Users/fffffbw/Documents/xspworkspace/ygo/xsp/src/views/shuaShenQi.lua	17;"	e
 findEntranceCount	/Users/fffffbw/Documents/xspworkspace/ygo/xsp/src/common/findEntrance.lua	26;"	e
-findEntranceCount	/Users/fffffbw/Documents/xspworkspace/ygo/xsp/src/common/findEntrance.lua	47;"	e
+findEntranceCount	/Users/fffffbw/Documents/xspworkspace/ygo/xsp/src/common/findEntrance.lua	54;"	e
 findJiangLi	/Users/fffffbw/Documents/xspworkspace/ygo/xsp/src/views/lingJiangLi.lua	59;"	f
 findJiangLi	/Users/fffffbw/Documents/xspworkspace/ygo/xsp/src/views/sendShenQi.lua	52;"	f
 findJiangLi	/Users/fffffbw/Documents/xspworkspace/ygo/xsp/src/views/shenQi.lua	32;"	f
@@ -967,7 +967,7 @@ isClose	/Users/fffffbw/Documents/xspworkspace/ygo/xsp/src/device.lua	5;"	e
 isColorClick(s)	/Users/fffffbw/Documents/xspworkspace/ygo/xsp/src/bblibs/pos.lua	98;"	f
 isDefaultHeaderToSign	/Users/fffffbw/Documents/xspworkspace/ygo/xsp/src/baiduOCR/百度云认证作者.lua	79;"	f
 isDouYin	/Users/fffffbw/Documents/xspworkspace/ygo/xsp/src/common/inputAccount.lua	85;"	e
-isDouYin	/Users/fffffbw/Documents/xspworkspace/ygo/xsp/src/common/login.lua	55;"	e
+isDouYin	/Users/fffffbw/Documents/xspworkspace/ygo/xsp/src/common/login.lua	56;"	e
 isDouYin	/Users/fffffbw/Documents/xspworkspace/ygo/xsp/src/device.lua	7;"	e
 isDouYin	/Users/fffffbw/Documents/xspworkspace/ygo/xsp/src/views/shuaShenQi.lua	132;"	e
 isDouYin	/Users/fffffbw/Documents/xspworkspace/ygo/xsp/src/views/shuaShenQi.lua	158;"	e
@@ -1063,7 +1063,7 @@ loadpos()	/Users/fffffbw/Documents/xspworkspace/ygo/xsp/src/badboy.lua	65;"	f
 loaduilib()	/Users/fffffbw/Documents/xspworkspace/ygo/xsp/src/badboy.lua	59;"	f
 loadutilslib()	/Users/fffffbw/Documents/xspworkspace/ygo/xsp/src/badboy.lua	62;"	f
 lockscreen	/Users/fffffbw/Documents/xspworkspace/ygo/xsp/src/bblibs/utils.lua	63;"	e
-login	/Users/fffffbw/Documents/xspworkspace/ygo/xsp/src/common/login.lua	47;"	f
+login	/Users/fffffbw/Documents/xspworkspace/ygo/xsp/src/common/login.lua	48;"	f
 login	/Users/fffffbw/Documents/xspworkspace/ygo/xsp/src/views/dianFeng.lua	9;"	e
 login	/Users/fffffbw/Documents/xspworkspace/ygo/xsp/src/views/lingJiangLi.lua	14;"	e
 login	/Users/fffffbw/Documents/xspworkspace/ygo/xsp/src/views/sendShenQi.lua	17;"	e

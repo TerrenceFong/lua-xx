@@ -474,11 +474,13 @@ elseif (width==750 and height==1334) then
       红h = createHUD()
       showHUD(红h,"抢红包中",20,"0xffff0000","0xffffffff",0,150,0,150,20)
       setScreenScale(640,1136)
-      hbxx=620
+      hbxx=590
       hbyy=300
       for hongbao=1,10000,1 do
         sysLog(hongbao)
         红包(hbxx,hbyy)
+        红包(hbxx-10,hbyy)
+        红包(hbxx+10,hbyy)
       end
       lua_exit()
     end
