@@ -1,4 +1,5 @@
 local accountList = {
+    'jinbihao144',
     'jinbihao145',
     'jinbihao146',
     'jinbihao147',
