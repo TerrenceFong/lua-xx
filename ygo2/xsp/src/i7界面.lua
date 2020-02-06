@@ -1,3 +1,5 @@
+local login = require('common.login')
+
 function 常用界面7()
 主界面7x,主界面7y= 找颜色(0x2d2c39,"12|2|0x141414,27|1|0xe0dcd5,46|1|0x2b2d34", 90, 45, 722, 97, 749)
 决斗场7x,决斗场7y= 找颜色(0x1d2f53,"20|0|0xdbdbd9,39|0|0xfdf9ef,67|0|0x41506c", 90, 691, 686, 786, 706)
@@ -599,13 +601,14 @@ function 防闪退7()
 		if flag == 0 then --如果没有运行
 			闪退次数=闪退次数+1
 			runApp("com.demea.conur") --运行QQ
-			mSleep(15000)
-			点击(660,530)
-			mSleep(15000)
-			点击(1016,121)
-			mSleep(10000)
-			点击(660,660)
-			mSleep(1000)
+			login()
+			-- mSleep(15000)
+			-- 点击(660,530)
+			-- mSleep(15000)
+			-- 点击(1016,121)
+			-- mSleep(10000)
+			-- 点击(660,660)
+			-- mSleep(1000)
 		end
 	end
 end
