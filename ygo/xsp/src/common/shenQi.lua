@@ -7,7 +7,7 @@ local function clickGift()
     sysLog('查找赠送按钮')
     local x, y = findColor(
         {624, 10, 942, 392}, 
-        "0|0|0xd1cfc1,-66|-17|0xcef4a1,65|-14|0xbfee84,-67|20|0x659916",
+        "0|0|0x344a12,-1|-43|0x80828e,-70|-32|0x6b7359,-73|16|0xc2d58b,68|17|0x303421,72|-5|0x17141d,-5|-6|0xdfdccf,-26|4|0xcbc9bc,16|-15|0xfef9ef",
         95, 0, 0, 0
     )
     if x > -1 then
