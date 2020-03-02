@@ -89,7 +89,8 @@ elseif 零点重置7x> -1 then     --ok
 end
 end
 
-function 少用界面7()
+function 少用界面7(isTrue)
+isTrue = isTrue or false
 if  断线7x> -1 then        --ok
 点击2(670, 420)
 elseif 升级7x> -1 then     --ok
@@ -156,7 +157,11 @@ elseif 赛季奖励7x> -1 then  --ok
 点击2(1114, 76)	
 end
 点击2(1330, 180) -- 防止卡信息卡死
+if isTrue == true then
+mSleep(ttt/2)
+else
 mSleep(ttt)
+end
 点击2(1330, 180) -- 防止卡信息卡死
 end
 
