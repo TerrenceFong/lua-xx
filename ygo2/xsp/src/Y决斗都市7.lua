@@ -5,7 +5,7 @@ function 决斗都市7()
       电()
       常用界面7()
       不常用界面7()
-      -- mSleep(ttt/2) 
+      -- mSleep(ttt) 
       
       if 胜>=设置胜场jjha then   --假如胜利场数达到UI里面设置的胜场数
         mSleep(100)
@@ -34,7 +34,7 @@ function 决斗都市7()
           lua_exit()
         end
       elseif 决斗都市有牌7x> -1 and 可手动==1 then
-        mSleep(ttt/2)
+        mSleep(ttt)
         领奖励7x,领奖励7y= 找颜色(0x300d02,"2|0|0x190702,3|0|0x423732,4|0|0xa09891", 95, 777, 438, 784, 443)
         if 领奖励7x> -1 then
           点击(785,430)
@@ -42,16 +42,16 @@ function 决斗都市7()
         end
         if 竞技认输==1 then
           点击(1145,515)
-          mSleep(ttt/2)
+          mSleep(600)
           点击(730,410)
-          mSleep(ttt/2)
+          mSleep(600)
           点击(670,670)
           break
         end
         点击(785,430)
-        mSleep(ttt/2)
+        mSleep(ttt)
         for xx=1,60,1 do
-          mSleep(ttt/2)
+          mSleep(ttt)
           常用界面7()
           if 手动中7x> -1 then
             点击(40, 180)
@@ -60,7 +60,7 @@ function 决斗都市7()
         end
       elseif 决斗都市有牌7x> -1 and 可手动==0 then
         sysLog('决斗都市有牌7x')
-        mSleep(ttt/2)
+        mSleep(ttt)
         领奖励7x,领奖励7y= 找颜色(0x300d02,"2|0|0x190702,3|0|0x423732,4|0|0xa09891", 95, 777, 438, 784, 443)
         if 领奖励7x> -1 then
           -- dialog("4", 5)
@@ -70,9 +70,9 @@ function 决斗都市7()
         end
         if 竞技认输==1 then
           点击(1145,515)
-          mSleep(ttt/2)
+          mSleep(600)
           点击(730,410)
-          mSleep(ttt/2)
+          mSleep(600)
           点击(670,670)
           break
         end
@@ -81,6 +81,15 @@ function 决斗都市7()
         sysLog('竞技没牌7x')
         if 自动牌组==1 then
           -- 选牌7()、
+          选取(380,400,20,300)
+          选取(580,400,20,300)
+          mSleep(300)
+          选取(380,400,20,300)
+          选取(580,400,20,300)
+          mSleep(300)
+          选取(380,400,20,300)
+          选取(580,400,20,300)
+          mSleep(300)
           选取(380,400,20,300)
           选取(580,400,20,300)
         end
@@ -105,7 +114,7 @@ function 决斗都市7()
           点击(300, 111)
           点击2(700, 420)
         else
-          mSleep(3*ttt/2) -- 点击(10,220)
+          mSleep(3*ttt) -- 点击(10,220)
         end
       elseif 胜利7x> -1 then
         点击(465, 678)
@@ -121,8 +130,8 @@ function 决斗都市7()
         showHUD(胜负,"胜 "..胜.."场 ".."负 "..负.." 场 ".."平 "..平.."场",20,"0xffff0000","0xffffffff",0,150,0,300,20)
       end
       
-      少用界面7(true)
-      
+      少用界面7()
+      防闪退7()
     end
   end
 end
