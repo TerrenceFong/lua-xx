@@ -14,7 +14,7 @@ local function autoFight(cb)
 		local x1, y1 = findColor(
 			{2, 149, 82, 226}, 
 			"0|0|0xc2bef0,0|-32|0xc0f3fd,25|-15|0xc7d7d0,26|27|0xfceaaa,-25|26|0xfceaaa,-26|-15|0xd6ffff,-12|-20|0xfefefe,9|-16|0x012760,11|7|0xf6f5fd",
-			85, 0, 0, 0
+			80, 0, 0, 0
 		)
 		-- 检查是否为自动
 

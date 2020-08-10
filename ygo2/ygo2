@@ -87,8 +87,8 @@ VALUE_INDEX	/Users/fffffbw/Documents/xspworkspace/ygo2/xsp/src/JSON.lua	584;"	e
 VERSION	/Users/fffffbw/Documents/xspworkspace/ygo2/xsp/src/JSON.lua	17;"	e
 VERSION	/Users/fffffbw/Documents/xspworkspace/ygo2/xsp/src/JSON.lua	26;"	e
 __tostring()	/Users/fffffbw/Documents/xspworkspace/ygo2/xsp/src/JSON.lua	955;"	f
-announcementCount	/Users/fffffbw/Documents/xspworkspace/ygo2/xsp/src/common/login.lua	21;"	e
-announcementCount	/Users/fffffbw/Documents/xspworkspace/ygo2/xsp/src/common/login.lua	39;"	e
+announcementCount	/Users/fffffbw/Documents/xspworkspace/ygo2/xsp/src/common/login.lua	24;"	e
+announcementCount	/Users/fffffbw/Documents/xspworkspace/ygo2/xsp/src/common/login.lua	42;"	e
 arr	/Users/fffffbw/Documents/xspworkspace/ygo2/xsp/src/fun集.lua	156;"	e
 arr	/Users/fffffbw/Documents/xspworkspace/ygo2/xsp/src/fun集.lua	157;"	e
 as_number	/Users/fffffbw/Documents/xspworkspace/ygo2/xsp/src/JSON.lua	430;"	e
@@ -99,7 +99,7 @@ bltb	/Users/fffffbw/Documents/xspworkspace/ygo2/xsp/src/fun集.lua	148;"	f
 c	/Users/fffffbw/Documents/xspworkspace/ygo2/xsp/src/JSON.lua	450;"	e
 c	/Users/fffffbw/Documents/xspworkspace/ygo2/xsp/src/JSON.lua	549;"	e
 c	/Users/fffffbw/Documents/xspworkspace/ygo2/xsp/src/JSON.lua	591;"	e
-checkAnnouncement	/Users/fffffbw/Documents/xspworkspace/ygo2/xsp/src/common/login.lua	19;"	f
+checkAnnouncement	/Users/fffffbw/Documents/xspworkspace/ygo2/xsp/src/common/login.lua	22;"	f
 codepoint	/Users/fffffbw/Documents/xspworkspace/ygo2/xsp/src/JSON.lua	479;"	e
 codepoint	/Users/fffffbw/Documents/xspworkspace/ygo2/xsp/src/JSON.lua	485;"	e
 colorTbl	/Users/fffffbw/Documents/xspworkspace/ygo2/xsp/src/Q连胜模式4s.lua	12;"	e
@@ -371,7 +371,7 @@ key_indent	/Users/fffffbw/Documents/xspworkspace/ygo2/xsp/src/JSON.lua	906;"	e
 kt	/Users/fffffbw/Documents/xspworkspace/ygo2/xsp/src/main.lua	56;"	e
 lingQu	/Users/fffffbw/Documents/xspworkspace/ygo2/xsp/src/神器7.lua	70;"	f
 lo_surrogate	/Users/fffffbw/Documents/xspworkspace/ygo2/xsp/src/JSON.lua	482;"	e
-login	/Users/fffffbw/Documents/xspworkspace/ygo2/xsp/src/common/login.lua	46;"	f
+login	/Users/fffffbw/Documents/xspworkspace/ygo2/xsp/src/common/login.lua	51;"	f
 login	/Users/fffffbw/Documents/xspworkspace/ygo2/xsp/src/i7界面.lua	1;"	e
 lowpart	/Users/fffffbw/Documents/xspworkspace/ygo2/xsp/src/JSON.lua	316;"	e
 lowpart	/Users/fffffbw/Documents/xspworkspace/ygo2/xsp/src/JSON.lua	327;"	e
