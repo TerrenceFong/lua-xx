@@ -44,7 +44,23 @@
                "align" : "left",
                "kbtype" : "number"
             },
-						            {
+            {
+               "type": "Label",
+               "text": "3.每次连胜最多吃几个瓶子(默认2个)",
+               "size": 28,
+               "align": "left",
+               "color": "220,0,0"
+            },
+            {
+               "id": "108",
+               "type": "Edit",
+               "prompt": "",
+               "text": "2",
+               "size": 30,
+               "align": "left",
+               "kbtype": "number"
+            },
+            {
                "id" : "192",
                "type" : "CheckBoxGroup",
                "size" : 35,
@@ -52,7 +68,7 @@
                "select" : "",
                "color" : "220,0,0"
             },
-						            {
+            {
                "type" : "Label",
                "text" : "↑↑↑当分数达到降分分数但>=3连胜时，无视分数直至失败才执行降分",
                "size" : 28,
@@ -80,7 +96,6 @@
                "align" : "left",
                "color" : "0,0,220"
             }
-
          ]
       }
    ]

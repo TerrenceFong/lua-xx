@@ -211,6 +211,13 @@ else
   设置投降分数=getNumberConfig("UI连降",tonumber(UILJ["106"]))
 end
 
+if UILJ["108"]=="" or UILJ["108"]==nil then
+  dialog("你没设置每次连胜最多吃几个瓶子，默认2个",3)
+  设置连胜瓶子个数=2
+else
+  设置连胜瓶子个数=getNumberConfig("UI连降",tonumber(UILJ["108"]))
+end
+
 if UILJ["192"]=="" then  
   防连胜=0
 else

@@ -612,3 +612,9 @@ function 防闪退7()
 		end
 	end
 end
+
+function 投降位置7()
+	投降位置7x, 投降位置7y = findColor({157, 23, 595, 227}, 
+	"0|0|0xe9f6ff,-1|-15|0xfbfbfb,-13|0|0xe6f1fc,-1|13|0xf2f6fb,16|-7|0xfffffd,16|7|0xffffff,-9|40|0xfceaaa,7|11|0x0c2966,4|45|0x020407",
+	85, 0, 0, 0)
+end
