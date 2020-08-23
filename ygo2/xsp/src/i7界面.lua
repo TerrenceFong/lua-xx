@@ -161,99 +161,152 @@ mSleep(ttt)
 end
 
 function 可领奖7()
-mSleep(ttt)
-if  可领奖==1 then
-while true do
-常用界面7()
-不常用界面7()
-if 主界面7x> -1  then   
-点击(1010, 370)
-elseif 决斗场7x> -1  then 
-break
-elseif 签到7x> -1  then  
-点击(1125, 60)
-elseif 领奖成功7x> -1  then 
-点击(666, 687)	
-end
-end
-mSleep(ttt)
-点击(480,555)  --进入每日领奖
-mSleep(ttt)
-点击(725,375)   --领取1
-mSleep(ttt)
-点击(666,678)   --返回
-mSleep(ttt)
-点击(725,375)   --领取2
-mSleep(ttt)
-点击(666,678)   --返回
-mSleep(ttt)
-点击(725,375)   --领取3
-mSleep(ttt)
-点击(666,678)   --返回
-mSleep(ttt)
-点击(725,375)   --领取4
-mSleep(ttt)
-点击(666,678)   --返回
-mSleep(ttt)
-点击(725,375)   --领取5
-mSleep(ttt)
-点击(666,678)   --返回
-mSleep(ttt)
-点击(1111,80)    --结束每日领奖回到决斗场
-mSleep(ttt)
-点击(90,25)     --返回主界面
-mSleep(2*ttt)
-点击(666,190)   --清除每日任务
-mSleep(ttt)
-点击(945,100)   --点击任务领取
-mSleep(ttt)
-点击(1028,640)   --点击任务领取5
-mSleep(ttt)
-点击(666,678)   --返回
-mSleep(ttt)
-点击(850,640)   --点击任务领取4
-mSleep(ttt)
-点击(666,678)   --返回
-mSleep(ttt)
-点击(660,640)   --点击任务领取3
-mSleep(ttt)
-点击(666,678)   --返回
-mSleep(ttt)
-点击(485,640)   --点击任务领取2
-mSleep(ttt)
-点击(666,678)   --返回
-mSleep(ttt)
-点击(300,640)   --点击任务领取1
-mSleep(ttt)
-点击(666,678)   --返回
-mSleep(ttt)
-点击(390,155)   --点击宝箱领取1
-mSleep(ttt)
-点击(666,678)   --返回
-mSleep(ttt)
-点击(500,155)   --点击宝箱领取2
-mSleep(ttt)
-点击(666,678)   --返回
-mSleep(ttt)
-点击(615,155)   --点击宝箱领取3
-mSleep(ttt)
-点击(666,678)   --返回
-mSleep(ttt)
-点击(730,155)   --点击宝箱领取4
-mSleep(ttt)
-点击(666,678)   --返回
-mSleep(ttt)
-点击(900,155)   --点击宝箱领取5
-mSleep(ttt)
-点击(666,678)   --返回
-mSleep(ttt)
-点击(1119,70)   --返回主界面
-mSleep(ttt)
-else
-mSleep(ttt)
-点击(90,25)    --回到主界面
-mSleep(ttt)
-end
+	mSleep(ttt)
+	if  可领奖==1 then
+		while true do
+			常用界面7()
+			不常用界面7()
+			if 主界面7x> -1  then   
+				点击(1010, 370)
+			elseif 决斗场7x> -1  then 
+				break
+			elseif 签到7x> -1  then  
+				点击(1125, 60)
+			elseif 领奖成功7x> -1  then 
+				点击(666, 687)	
+			end
+		end
+		mSleep(ttt)
+		点击(480,555)  --进入每日领奖
+		mSleep(ttt)
+		点击(725,375)   --领取1
+		mSleep(ttt)
+		点击(666,678)   --返回
+		mSleep(ttt)
+		点击(725,375)   --领取2
+		mSleep(ttt)
+		点击(666,678)   --返回
+		mSleep(ttt)
+		点击(725,375)   --领取3
+		mSleep(ttt)
+		点击(666,678)   --返回
+		mSleep(ttt)
+		点击(725,375)   --领取4
+		mSleep(ttt)
+		点击(666,678)   --返回
+		mSleep(ttt)
+		点击(725,375)   --领取5
+		mSleep(ttt)
+		点击(666,678)   --返回
+		mSleep(ttt)
+		-- 赛季宝箱
+		点击(250,260)  --进入赛季宝箱
+		mSleep(ttt)
+		点击(735,355)   --领取1
+		mSleep(ttt)
+		点击(666,678)   --返回
+		mSleep(ttt)
+		点击(735,355)   --领取2
+		mSleep(ttt)
+		点击(666,678)   --返回
+		mSleep(ttt)
+		点击(735,355)   --领取3
+		mSleep(ttt)
+		点击(666,678)   --返回
+		mSleep(ttt)
+		点击(735,355)   --领取4
+		mSleep(ttt)
+		点击(666,678)   --返回
+		mSleep(ttt)
+		点击(735,355)   --领取5
+		mSleep(ttt)
+		点击(666,678)   --返回
+		mSleep(ttt)
+		点击(735,355)   --领取6
+		mSleep(ttt)
+		点击(666,678)   --返回
+		mSleep(ttt)
+		点击(1111,80)    --结束每日领奖回到决斗场
+		mSleep(ttt)
+		点击(90,25)     --返回主界面
+		mSleep(2*ttt)
+		点击(666,190)   --清除每日任务
+		mSleep(ttt)
+		点击(945,100)   --点击任务领取
+		mSleep(ttt)
+		点击(1028,640)   --点击任务领取5
+		mSleep(ttt)
+		点击(666,678)   --返回
+		mSleep(ttt)
+		点击(850,640)   --点击任务领取4
+		mSleep(ttt)
+		点击(666,678)   --返回
+		mSleep(ttt)
+		点击(660,640)   --点击任务领取3
+		mSleep(ttt)
+		点击(666,678)   --返回
+		mSleep(ttt)
+		点击(485,640)   --点击任务领取2
+		mSleep(ttt)
+		点击(666,678)   --返回
+		mSleep(ttt)
+		点击(300,640)   --点击任务领取1
+		mSleep(ttt)
+		点击(666,678)   --返回
+		mSleep(ttt)
+		点击(390,155)   --点击宝箱领取1
+		mSleep(ttt)
+		点击(666,678)   --返回
+		mSleep(ttt)
+		点击(500,155)   --点击宝箱领取2
+		mSleep(ttt)
+		点击(666,678)   --返回
+		mSleep(ttt)
+		点击(615,155)   --点击宝箱领取3
+		mSleep(ttt)
+		点击(666,678)   --返回
+		mSleep(ttt)
+		点击(730,155)   --点击宝箱领取4
+		mSleep(ttt)
+		点击(666,678)   --返回
+		mSleep(ttt)
+		点击(900,155)   --点击宝箱领取5
+		mSleep(ttt)
+		点击(666,678)   --返回
+		-- 中间3个奖励
+		mSleep(ttt)
+		点击(390,355)   --点击中间宝箱领取1
+		mSleep(ttt)
+		点击(666,678)   --返回
+		mSleep(ttt)
+		点击(620,355)   --点击中间宝箱领取2
+		mSleep(ttt)
+		点击(666,678)   --返回
+		mSleep(ttt)
+		点击(900,355)   --点击中间宝箱领取3
+		mSleep(ttt)
+		点击(666,678)   --返回
+		mSleep(ttt)
+		点击(1119,70)   --返回主界面
+
+		-- 邮件的奖励
+		mSleep(2 * ttt)
+		点击(1190,100)   -- 进入邮件
+		mSleep(ttt)
+		点击(320,350)   -- 点击奖励
+		mSleep(ttt)
+		点击(1015,228)   --领取奖励
+		mSleep(ttt)
+		点击(666,678)   --返回
+
+		mSleep(ttt)
+		点击(1119,100)   --返回主界面
+		mSleep(ttt)
+	else
+		mSleep(ttt)
+		点击(90,25)    --回到主界面
+		mSleep(ttt)
+	end
 end
 
 function 选牌7()
