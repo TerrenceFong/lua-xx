@@ -159,7 +159,7 @@ local function jiangli()
     mSleep(ttt)
     tab(1015,228)   --领取奖励
     mSleep(ttt)
-    tab(666,678)   --返回
+    tab(666,660)   --返回
 
     mSleep(ttt)
     tab(1119,100)   --返回主界面
