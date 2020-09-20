@@ -69,7 +69,7 @@ showHUD(胜负,"运行中",20,"0xffff0000","0xffffffff",0,150,0,100,20)
 
 local function lingQu()
     sysLog('获取可领取的个数')
-    mSleep(1000)
+    -- mSleep(1000)
     local point = findColors(
         {862, 122, 1119, 660}, 
         "0|0|0xa7a897,0|-21|0xc6f28d,1|-17|0xb5ea7b,3|-9|0x202d0e,13|-1|0xfffaf0,16|6|0xdddbce,17|10|0x1a2a02,-31|10|0x528506,-51|-17|0xb7ea74",
@@ -78,10 +78,17 @@ local function lingQu()
     if #point ~= 0 then
         sysLog('当前可领取的个数为：'..#point)
         for var = 1, #point do
-            点击(point[var].x, point[var].y)
-            mSleep(500)
-            点击(665, 660)
-            mSleep(500)
+            if var > 1 and point[var].y ~= point[var - 1].y then
+                点击(point[var].x, point[var].y)
+                mSleep(500)
+                点击(665, 660)
+                mSleep(500)
+            elseif var == 1 then
+                点击(point[var].x, point[var].y)
+                mSleep(500)
+                点击(665, 660)
+                mSleep(500)
+            end
         end
     end
 end
