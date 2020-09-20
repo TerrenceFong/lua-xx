@@ -246,7 +246,12 @@ elseif 决斗场7x> -1 and 可手动==1  then
   --   end
   -- end
 
-  if 本局已经失败 == 1 and 已经失败次数 > 设置连胜瓶子个数 then
+  if 防连胜 == 1 then
+    降分()
+    防连胜 = 0
+  end
+
+  if 本局已经失败 == 1 and 已经失败次数 > 设置连胜瓶子个数 and 胜 <= (设置胜场 - 10) then
     降分()
   end
 
@@ -286,7 +291,12 @@ elseif 决斗场7x> -1 and 可手动==0  then
   --   end
   -- end
 
-  if 本局已经失败 == 1 and 已经失败次数 > 设置连胜瓶子个数 then
+  if 防连胜 == 1 then
+    降分()
+    防连胜 = 0
+  end
+
+  if 本局已经失败 == 1 and 已经失败次数 > 设置连胜瓶子个数 and 胜 <= (设置胜场 - 10) then
     降分()
   end
 

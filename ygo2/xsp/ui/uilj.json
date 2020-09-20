@@ -64,7 +64,7 @@
                "id" : "192",
                "type" : "CheckBoxGroup",
                "size" : 35,
-               "list" : "连胜保护",
+               "list" : "先降分到800",
                "select" : "",
                "color" : "220,0,0"
             },
