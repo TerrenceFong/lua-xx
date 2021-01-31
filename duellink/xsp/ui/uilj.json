@@ -1,0 +1,102 @@
+{
+   "style" : "default",
+   "config" : "save_连降.dat",
+   "width" : 800,
+   "height" : 800,
+   "cancelscroll" : true,
+   "countdown" : 60,
+   "cancelname" : "取消",
+   "okname" : "确定",
+   "views" : [
+      {
+         "text" : "连降再战",
+         "type" : "Page",
+         "views" : [
+				{
+               "type" : "Label",
+               "text" : "1.设置开始投降分数(默认1200分)",
+               "size" : 28,
+               "align" : "left",
+               "color" : "220,0,0"
+            },
+            {
+               "id" : "106",
+               "type" : "Edit",
+               "prompt" : "",
+               "text" : "1200",
+               "size" : 30,
+               "align" : "left",
+               "kbtype" : "number"
+            },
+            {
+               "type" : "Label",
+               "text" : "2.设置结束投降分数(默认800分)",
+               "size" : 28,
+               "align" : "left",
+               "color" : "220,0,0"
+            },
+            {
+               "id" : "107",
+               "type" : "Edit",
+               "prompt" : "",
+               "text" : "800",
+               "size" : 30,
+               "align" : "left",
+               "kbtype" : "number"
+            },
+            {
+               "type": "Label",
+               "text": "3.每次连胜最多吃几个瓶子(默认2个)",
+               "size": 28,
+               "align": "left",
+               "color": "220,0,0"
+            },
+            {
+               "id": "108",
+               "type": "Edit",
+               "prompt": "",
+               "text": "2",
+               "size": 30,
+               "align": "left",
+               "kbtype": "number"
+            },
+            {
+               "id" : "192",
+               "type" : "CheckBoxGroup",
+               "size" : 35,
+               "list" : "先降分到800",
+               "select" : "",
+               "color" : "220,0,0"
+            },
+            {
+               "type" : "Label",
+               "text" : "↑↑↑当分数达到降分分数但>=3连胜时，无视分数直至失败才执行降分",
+               "size" : 28,
+               "align" : "left",
+               "color" : "0,0,220"
+            },
+            {
+               "type" : "Label",
+               "text" : "使用说明:达到目标分数后，开始执行连续投降，直到满足结束投降的分数，必须设置胜利场次(投降不算负),达到胜利场次后结束",
+               "size" : 28,
+               "align" : "left",
+               "color" : "50,50,50"
+            },
+            {
+               "type" : "Label",
+               "text" : "附加说明:结束分数要比开始分数低,最少800分,少于800分会一直投降,直到设置胜利的场次,需要无限投降可以把投降分数设置800分，结束分数设置799分",
+               "size" : 28,
+               "align" : "left",
+               "color" : "0,0,220"
+            },
+            {
+               "type" : "Label",
+               "text" : "注意:保证游戏画面上方不会弹出消息框(扣扣、微信、短信之类),会识别错误或者点进信息",
+               "size" : 28,
+               "align" : "left",
+               "color" : "0,0,220"
+            }
+         ]
+      }
+   ]
+}

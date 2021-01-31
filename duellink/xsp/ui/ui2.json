@@ -1,0 +1,41 @@
+{
+   "style" : "default",
+   "config" : "save_神器.dat",
+   "width" : 800,
+   "height" : 800,
+   "cancelscroll" : true,
+   "countdown" : 999,
+   "cancelname" : "取消",
+   "okname" : "确定",
+   "views" : [
+      {
+         "text" : "神器",
+         "type" : "Page",
+         "views" : [
+            {
+               "type" : "Label",
+               "text" : "说明：脚本只赠送首饰、钥匙、天平，请打开世界聊天频道或社团成员界面再运行脚本，“自选择对象”每次赠送都要点击一下头像才赠送一次",
+               "size" : 30,
+               "align" : "left",
+               "color" : "50,50,50"
+            },
+            {
+               "type" : "Label",
+               "text" : "选择赠送神器对象方式",
+               "size" : 30,
+               "align" : "left",
+               "color" : "0,0,220"
+            },
+            {
+               "id" : "273",
+               "list" : "1.世界频道第一位（自己控制位置）,2.社团第一位（自己控制位置）,3.社团最后一位（自己控制位置）,4.自选择对象",
+               "select" : "2",
+               "size" : 30,
+               "type" : "RadioGroup",
+               "orientation" : "horizontal",
+               "color" : "220,0,0"
+            }
+         ]
+      }
+   ]
+}

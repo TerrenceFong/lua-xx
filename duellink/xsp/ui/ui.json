@@ -1,0 +1,80 @@
+{
+   "style" : "default",
+   "config" : "save_ios决战之城.dat",
+   "width" : 900,
+   "height" : 1100,
+   "cancelscroll" : true,
+   "countdown" : 999,
+   "cancelname" : "取消",
+   "okname" : "确定",
+   "views" : [
+      {
+         "text" : "基本设置",
+         "type" : "Page",
+         "views" : [
+            {
+               "type" : "Label",
+               "text" : "使用说明：请把hone键置于在画面右侧，按音量键关闭脚本，运行过程中不能旋转屏幕，设置好以下选项后点击确定开始执行。",
+               "size" : 40,
+               "align" : "left",
+               "color" : "50,50,50"
+            },
+            {
+               "type" : "Label",
+               "text" : "请选择需要的模式(八选一)",
+               "size" : 28,
+               "align" : "left",
+               "color" : "220,0,0"
+            },
+            {
+               "id" : "101",
+               "list" : "1.休闲决斗",
+               "select" : "0",
+               "size" : 40,
+               "type" : "RadioGroup",
+               "orientation" : "horizontal",
+               "color" : "220,0,0"
+            },
+            {
+               "type" : "Label",
+               "text" : "1-1.胜利场次(默认100场)(1-4模式必填)",
+               "size" : 28,
+               "align" : "left",
+               "color" : "220,0,0"
+            },
+            {
+               "type" : "Label",
+               "text" : "注意:任何模式都要设置胜利场次，可选择附加功能",
+               "size" : 28,
+               "align" : "left",
+               "color" : "0,0,220"
+            },
+            {
+               "id" : "103",
+               "type" : "Edit",
+               "prompt" : "",
+               "text" : "100",
+               "size" : 30,
+               "align" : "left",
+               "kbtype" : "number"
+            },
+            {
+               "type" : "Label",
+               "text" : "2-1.上分分数(默认1400分)(1-4模式必填，无限、连降或连胜需勾上~附加2-❷)",
+               "size" : 28,
+               "align" : "left",
+               "color" : "220,0,0"
+            },
+            {
+               "id" : "105",
+               "type" : "Edit",
+               "prompt" : "",
+               "text" : "1400",
+               "size" : 30,
+               "align" : "left",
+               "kbtype" : "number"
+            }
+         ]
+      }
+   ]
+}
