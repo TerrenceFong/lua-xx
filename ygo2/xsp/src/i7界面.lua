@@ -79,11 +79,23 @@ elseif 手动中7x> -1 then  --ok
 elseif 自动中7x> -1 then  --ok
 mSleep(1000) --点击(7, 340)
 elseif 胜利7x> -1 then    --ok
-点击(465, 678)
+	if 调整位置==1 then
+		点击(667, 678)
+	else
+		点击(465, 678)
+	end
 elseif 失败7x> -1 then    --ok
-点击(465, 678)
-elseif 平局7x> -1 then     -------- 无法测试  
-点击(465, 678)
+	if 调整位置==1 then
+		点击(667, 678)
+	else
+		点击(465, 678)
+	end
+elseif 平局7x> -1 then     -------- 无法测试
+	if 调整位置==1 then
+		点击(667, 678)
+	else
+		点击(465, 678)
+	end
 elseif 零点重置7x> -1 then     --ok 
 点击2(660,430)
 end
