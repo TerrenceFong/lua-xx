@@ -8,10 +8,12 @@ local function globalDialogError()
         95, 0, 0, 0
     )
     if x > -1 then
+        sysLog('出现错误弹窗，已点击')
         tab(666, 420)
+        return true
     end
 
-    mSleep(500)
+    return false
 end
 
 return globalDialogError

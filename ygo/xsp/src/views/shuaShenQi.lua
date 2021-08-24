@@ -41,7 +41,13 @@ local function returnPage(cb)
     mSleep(1000)
     while true do
         -- 错误判断逻辑
-        globalDialogError()
+        local flag = globalDialogError()
+
+        if flag == true then
+            sysLog('出现错误，跳过当前战斗')
+            break
+        end
+
         lvUpDialog()
         sysLog('弹窗错误通过')
 
