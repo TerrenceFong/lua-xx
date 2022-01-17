@@ -326,9 +326,9 @@ if ret5 == 0 then  --当前图框点击取消的时候
 end
 
 if UIJJHA["501"]=="" then  
-  用钱=0
+  直接撕券=0
 else
-  用钱=1
+  直接撕券=1
 end
 
 if UIJJHA["502"]=="" then  

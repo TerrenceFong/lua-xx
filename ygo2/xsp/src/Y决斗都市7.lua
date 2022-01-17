@@ -28,11 +28,11 @@ function 决斗都市7()
         sysLog('决斗都市有卷7x')
         点击(790,670)
       elseif 决斗都市没卷7x> -1 then
-        if 用钱==1 then
-          点击(900,670)
-        else
-          lua_exit()
-        end
+        -- if 用钱==1 then
+        --   点击(900,670)
+        -- else
+        -- end
+        lua_exit()
       elseif 决斗都市有牌7x> -1 and 可手动==1 then
         mSleep(ttt)
         领奖励7x,领奖励7y= 找颜色(0x300d02,"2|0|0x190702,3|0|0x423732,4|0|0xa09891", 95, 777, 438, 784, 443)
@@ -40,7 +40,7 @@ function 决斗都市7()
           点击(785,430)
           break
         end
-        if 竞技认输==1 then
+        if 直接撕券==1 then
           点击(1145,515)
           mSleep(600)
           点击(730,410)
@@ -68,7 +68,7 @@ function 决斗都市7()
           sysLog('领奖励成功，已点击')
           break
         end
-        if 竞技认输==1 then
+        if 直接撕券==1 then
           点击(1145,515)
           mSleep(600)
           点击(730,410)
