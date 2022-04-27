@@ -56,11 +56,20 @@ local function login(cb)
         sysLog('检测登录页面中')
 
         keepScreen(true)
-        local x, y = findColor(
-            {389, 174, 942, 570}, 
-            "0|0|0xffffff,-2|130|0xffffff,1|314|0x00cc66,505|308|0x00cc66,492|147|0xc8cac8,483|147|0xffffff,254|335|0x00cc66,-21|-19|0x353636",
-            95, 0, 0, 1
-        )
+        local x, y
+        if 启用备用版本==0 then
+            x, y = findColor(
+                {389, 174, 942, 570}, 
+                "0|0|0xffffff,-2|130|0xffffff,1|314|0x00cc66,505|308|0x00cc66,492|147|0xc8cac8,483|147|0xffffff,254|335|0x00cc66,-21|-19|0x353636",
+                95, 0, 0, 1
+            )
+        else 
+            x, y = findColor(
+                {236, 86, 1097, 664},
+                "0|0|0xfcfeff,-7|473|0xe9ecef,90|193|0x84c023,289|109|0x4d4c4d,703|379|0x0fce69,287|214|0x444343,184|368|0x23ac38",
+                95, 0, 0, 0
+            )
+        end
         keepScreen(false)
 
         if x > -1 then
@@ -71,7 +80,11 @@ local function login(cb)
             end
             mSleep(1500)
             sysLog('准备点击登录')
-            点击(670, 550)
+            if 启用备用版本==0 then
+                点击(670, 550)
+            else
+                点击(770, 490)
+            end
             checkAnnouncement()
             comfirm()
             break

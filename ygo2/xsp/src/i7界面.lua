@@ -662,10 +662,10 @@ end
 
 function 防闪退7()
 	if 闪退==1 then
-		flag = appIsRunning("com.demea.conur"); 
+		flag = appIsRunning(应用版本号); 
 		if flag == 0 then --如果没有运行
 			闪退次数=闪退次数+1
-			runApp("com.demea.conur") --运行QQ
+			runApp(应用版本号) --运行QQ
 			login()
 			-- mSleep(15000)
 			-- 点击(660,530)
