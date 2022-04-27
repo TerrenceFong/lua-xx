@@ -152,6 +152,14 @@
           "color": "220,0,0"
         },
         {
+          "id": "100005",
+          "type": "CheckBoxGroup",
+          "size": 40,
+          "list": "⑨：启用备用版本",
+          "select": "",
+          "color": "220,0,0"
+        },
+        {
           "type": "Label",
           "text": "附加模式2，需要的请点√",
           "size": 28,

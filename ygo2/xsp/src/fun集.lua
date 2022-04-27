@@ -1,3 +1,7 @@
+local bb = require('badboy')
+bb.loaduilib()
+local json = bb.getJSON()
+
 function 结束()
 --local et= getNetTime()
 --local st=et-kt
@@ -409,5 +413,52 @@ function 使用瓶子()
       sysLog('已点击瓶子')
       confirmBottle()
       mSleep(500)
+  end
+end
+
+-- 定时任务
+function 定时任务()
+  if UI["100004"]~="" then    
+    sysLog('定时挂机')
+    if UI["100004"]== "0" then 
+      local rootview = RootView:create({style = ViewStyle.CUSTOME, width = 660, height = 600})
+
+      local label = Label:create("Label", {color = "0, 0, 225", size = 30})
+      label.text = "----------------设置时间----------------"
+      local editHour = Edit:create("editHour", {color = "0, 0, 0", size = 20, prompt = "默认小时 02"})
+      editHour.align = TextAlign.LEFT
+      local editMin = Edit:create("editMin", {color = "0, 0, 0", size = 20, prompt = "默认分钟 30"})
+      editMin.align = TextAlign.LEFT
+
+      rootview:addView(label)    --把page添加到rootview
+      rootview:addView(editHour)
+      rootview:addView(editMin)
+
+      local uijson = json.encode(rootview)
+      local UIRet, UIResults = showUI(uijson)
+
+      if UIRet == 0 then
+        toast("取消定时")
+        lua_exit()
+      elseif UIRet == 1 then
+        local hour = (UIResults.editHour ~= "" and {tonumber(UIResults.editHour)} or {2})[1]
+        local minute = (UIResults.editMin ~= "" and {tonumber(UIResults.editMin)} or {30})[1]
+        
+        local nowTime = os.time()
+        local dateTable = os.date("*t", nowTime)
+        dateTable.hour = hour
+        dateTable.min = minute
+        dateTable.sec = 0
+
+        local targetTime = os.time(dateTable)
+        
+        local countdown = targetTime - nowTime
+        print('倒计时：'..countdown)
+
+        -- 开始休眠
+        mSleep(countdown * 1000)
+        print('休眠结束，开始执行预设任务')
+      end
+    end
   end
 end
