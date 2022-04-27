@@ -86,7 +86,7 @@ local function inputAccount(account)
     if isDouYin == '0' then
         -- 聚焦
         mSleep(1500)
-        tab(720, 345)
+        tab(800, 240)
         mSleep(2500)
         
         -- 清空
@@ -98,6 +98,8 @@ local function inputAccount(account)
         inputText(account)
         mSleep(2500)
         -- blurAccount()
+        sysLog('取消焦点')
+        tab(300, 145)
     else
         findAccount()
         mSleep(2500)

@@ -60,17 +60,17 @@ local function login(cb)
         keepScreen(true)
         local isDouYin = _G.UIResults.isDouYin
         local x, y = -1, -1
-        if isDouYin == '0' then
-            x, y = findColor(
-                {369, 169, 952, 636}, 
-                "0|0|0xff3a00,97|-345|0xfe3b00,153|-340|0xfe3c02,499|-185|0xfbfcfd,493|23|0xff6300,270|34|0xffe2d6,38|-74|0x3c3c3c",
-                95, 0, 0, 0
-            )
-        else
+        if isDouYin == "" then
             x, y = findColor(
                 {389, 174, 942, 570}, 
                 "0|0|0xffffff,-2|130|0xffffff,1|314|0x00cc66,505|308|0x00cc66,492|147|0xc8cac8,483|147|0xffffff,254|335|0x00cc66,-21|-19|0x353636",
                 95, 0, 0, 1
+            )
+        else 
+            x, y = findColor(
+                {236, 86, 1097, 664},
+                "0|0|0xfcfeff,-7|473|0xe9ecef,90|193|0x84c023,289|109|0x4d4c4d,703|379|0x0fce69,287|214|0x444343,184|368|0x23ac38",
+                95, 0, 0, 0
             )
         end
         keepScreen(false)
@@ -83,7 +83,11 @@ local function login(cb)
             end
             mSleep(1500)
             sysLog('准备点击登录')
-            tab(670, 550)
+            if isDouYin == "" then
+                tab(670, 550)
+            else
+                tab(770, 490)
+            end
             checkAnnouncement()
             comfirm()
             break

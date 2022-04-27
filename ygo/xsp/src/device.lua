@@ -6,8 +6,8 @@ local device = function(cb, isClose)
 	local appName = "com.demea.conur"
 	local isDouYin = _G.UIResults.isDouYin
 	if isDouYin == '0' then
-		sysLog('抖音版')
-		appName = "com.leocool.yugioh.ay"
+		sysLog('备用版本')
+		appName = "com.linegame.stage.center"
 	end
 
 	local runSuccess = runApp(appName)
