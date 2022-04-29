@@ -100,6 +100,9 @@ function 竞技之门7()
         end
       elseif 手动中7x> -1 and 可手动==0 then
         if 竞技认输==1 then
+          -- 刚进去会点不到右上角，需要等待一段时间
+          mSleep(5000)
+
           点击(43, 111)
           mSleep(700)
           投降位置7()
@@ -110,6 +113,9 @@ function 竞技之门7()
         end
       elseif 自动中7x> -1 then
         if 竞技认输==1 then
+          -- 刚进去会点不到右上角，需要等待一段时间
+          mSleep(5000)
+
           点击(43, 111)
           mSleep(700)
           投降位置7()
