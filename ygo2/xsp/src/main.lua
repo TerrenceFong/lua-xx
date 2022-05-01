@@ -443,6 +443,7 @@ elseif (width==750 and height==1334) then
   end	
   if UI["101"]~="" then 
     if UI["101"]== "0" then
+      定时任务()
       require("w无限模式7")
       无限战斗7()
     elseif UI["101"]== "1" then
