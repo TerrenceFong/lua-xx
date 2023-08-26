@@ -34,7 +34,7 @@ local function checkAnnouncement()
             break
         end
 
-        if announcementCount >= 10 then
+        if announcementCount >= 60 then
             sysLog('公告校验退出')
             点击(1015, 115)
             break

@@ -22,8 +22,21 @@ function 决斗都市7()
       
       if 主界面7x> -1 then
         点击2(1010, 370)
-      elseif 决斗都市场7x> -1 then
-        点击(120,580)
+      elseif 决斗场7x> -1 then
+        sysLog('找都市的入口')
+        -- 滑一下
+        sysLog('开始滑动')
+        touchDown(1, 120, 580); --在 (120, 580) 按下
+        for i = 0, 460, 10 do   --使用for循环连续滑动
+            touchMove(1, 120, 580 - i); 
+            mSleep(40);        --延迟
+        end
+        touchUp(1, 120, 580 - 30); --在 (120, 120) 抬起
+
+        mSleep(1000)
+        都市入口位置7()
+        sysLog('找到入口')
+        点击(都市入口位置7x, 都市入口位置7y)
       elseif 决斗都市有卷7x> -1 then
         sysLog('决斗都市有卷7x')
         点击(790,670)
